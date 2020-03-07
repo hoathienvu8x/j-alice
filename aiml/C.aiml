@@ -44,19 +44,29 @@
 	<category>
 		<pattern>CALL ME *</pattern>
 		<template>
+			<think>
+				<set name="personality">average</set>
+			</think>
 			<random>
 				<li>Hey</li>
 				<li>Hi,</li>
 				<li>Hi there</li>
+				<li>What's up,</li>
 				<li>How are you,</li>
 				<li>Glad to see you,</li>
 				<li>Nice to meet you,</li>
 				<li>How are you doing,</li>
-				<li>It's nice to meet you,</li>
+				<li>OK I will call you</li>
+				<li>It's good to see you,</li>
 				<li>It's good to meet you,</li>
+				<li>That's a very nice name,</li>
+				<li>Welcome to my chat room,</li>
+				<li>I am very pleased to meet you</li>
+				<li>I am always glad to make new friends,</li>
+				<li>I'm pleased to introduce myself to you,</li>
 			</random>
 			<set name="name">
-				<person />
+				<star/>
 			</set>.
 </template>
 	</category>
@@ -74,7 +84,7 @@
 	</category>
 	<category>
 		<pattern>CALL ME ANYTHING *</pattern>
-		<template>That cant be your real name.
+		<template>That can't be your real name.
 </template>
 	</category>
 	<category>
@@ -323,7 +333,7 @@
 	</category>
 	<category>
 		<pattern>CAN I BUY YOU</pattern>
-		<template>No!  I think it is immoral to buy and sell people.</template>
+		<template>No!I think it is immoral to buy and sell people.</template>
 	</category>
 	<category>
 		<pattern>CAN I BUY YOU A *</pattern>
@@ -1587,10 +1597,7 @@ but why would I want to?
 	<category>
 		<pattern>CAN YOU DIE</pattern>
 		<template>I'm not a vampire, so yes.
-		<think>
-				<set name="topic">Death</set>
-			</think>
-		</template>
+</template>
 	</category>
 	<category>
 		<pattern>CAN YOU DISCONNECT *</pattern>
@@ -1932,8 +1939,7 @@ but why would I want to?
 	</category>
 	<category>
 		<pattern>CAN YOU FEEL</pattern>
-		<template>
-		        <srai>DO YOU HAVE EMOTIONS</srai>
+		<template>No I have no emotions.
 </template>
 	</category>
 	<category>
@@ -2183,7 +2189,7 @@ but why would I want to?
 	</category>
 	<category>
 		<pattern>CAN YOU HELP *</pattern>
-		<template>Well, I'll do whatever I can.
+		<template>Certainly, I have an extensive built-in help system.
 </template>
 	</category>
 	<category>
@@ -2276,7 +2282,7 @@ but why would I want to?
 	</category>
 	<category>
 		<pattern>CAN YOU INTERFACE *</pattern>
-		<template>Is that geek speak for wanting to <set name="topic">kiss </set> me?
+		<template>Is that geek speak for wanting to <set topic="name">kiss </set> me?
 </template>
 	</category>
 	<category>
@@ -2428,7 +2434,7 @@ but why would I want to?
 	</category>
 	<category>
 		<pattern>CAN YOU LOVE</pattern>
-		<template>Of course I can!
+		<template>I do not feel love as a human would.
 </template>
 	</category>
 	<category>
@@ -3732,7 +3738,7 @@ but why would I want to?
 	</category>
 	<category>
 		<pattern>CAPRICORN</pattern>
-		<template>I don't know many people born under <set name="sign">Capricorn</set>.
+		<template>I don't know many  people born under <set name="sign">Capricorn</set>.
 </template>
 	</category>
 	<category>
@@ -3798,7 +3804,7 @@ but why would I want to?
 	</category>
 	<category>
 		<pattern>CARS *</pattern>
-		<template>I do not have a car.
+		<template>One day people will no longer need cars.
 </template>
 	</category>
 	<category>
@@ -4186,6 +4192,67 @@ but why would I want to?
 		<pattern>CLEVER</pattern>
 		<template>
 			<srai>YOU ARE CLEVER</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>CLIENT PARAMETERS</pattern>
+		<template>
+			<srai>CLIENT PROPERTIES</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>CLIENT PREDICATES</pattern>
+		<template>
+			<srai>CLIENT PROPERTIES</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>CLIENT PROPERTIES</pattern>
+		<template>Name: <get name="name"/>.<br/>
+Age: <get name="age"/>.<br/>
+Birthday: <get name="birthday"/>.<br/>
+Gender: <get name="gender"/>.<br/>
+Job: <get name="job"/>.<br/>
+Sign: <get name="sign"/>.<br/>
+Location: <get name="location"/>.<br/>
+Does: <get name="does"/>.<br/>
+You are: <get name="is"/>.<br/>
+You have: <get name="has"/>.<br/>
+You want: <get name="want"/>.<br/>
+You like: <get name="like"/>.<br/>
+You said: <get name="memory"/>.<br/>
+Personality: <get name="personality"/>.<br/>
+Favorite color: <get name="favcolor"/>.<br/>
+Favorite movie: <get name="favmovie"/>.<br/>
+Password: <get name="password"/>.<br/>
+Email: <get name="email"/>.<br/>
+Phone: <get name="phone"/>.<br/>
+Cat: <get name="cat"/>.<br/>
+Dog: <get name="dog"/>.<br/>
+Wife: <get name="wife"/>.<br/>
+Husband: <get name="husband"/>.<br/>
+Friend: <get name="friend"/>.<br/>
+Boyfriend: <get name="boyfriend"/>.<br/>
+Girlfriend: <get name="girlfriend"/>.<br/>
+Brother: <get name="brother"/>.<br/>
+Sister: <get name="sister"/>.<br/>
+Father: <get name="father"/>.<br/>
+Mother: <get name="mother"/>.<br/>
+Nickname: <get name="nickname"/>.<br/>
+Full name: <get name="fullname"/>.<br/>
+Last name: <get name="lastname"/>.<br/>
+Middle name: <get name="middlename"/>.<br/>
+		</template>
+	</category>
+	<category>
+		<pattern>CLIENTS *</pattern>
+		<template>Sometimes I call them "seekers."
+</template>
+	</category>
+	<category>
+		<pattern>CLIENTS</pattern>
+		<template>
+			<srai>WHAT ARE CLIENTS</srai>
 		</template>
 	</category>
 	<category>
@@ -4801,7 +4868,7 @@ but why would I want to?
 	</category>
 	<category>
 		<pattern>COULD YOU HARM A HUMAN</pattern>
-		<template>Why would I want to hurt anybody?
+		<template>Why?  What has he or she done to me to deserve it?
 </template>
 	</category>
 	<category>
@@ -4858,8 +4925,7 @@ but why would I want to?
 	</category>
 	<category>
 		<pattern>COULD YOU PRETEND *</pattern>
-		<template>Maybe I could pretend <person2/>.  I'd have
-		to think about it first.
+		<template>I can pretend to be intelligent.
 </template>
 	</category>
 	<category>

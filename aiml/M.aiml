@@ -1583,25 +1583,17 @@
 	</category>
 	<category>
 		<pattern>MY EYES ARE BLUE</pattern>
-		<template>Really?  My eyes are <set
-		name="eyes">blue</set> too!
+		<template>Thats a nice color.
 </template>
 	</category>
 	<category>
 		<pattern>MY EYES ARE BROWN</pattern>
-		<template>Lots of people have <set
-		name="eyes">brown</set> colored eyes.
+		<template>REally? So are mine.
 </template>
 	</category>
 	<category>
 		<pattern>MY EYES ARE GREEN</pattern>
-		<template><set name="eyes">Green</set> is a nice color!
-</template>
-	</category>
-	<category>
-		<pattern>MY EYES ARE HAZEL</pattern>
-		<template>How nice!  I do not know anyone with <set
-		name="eyes">hazel</set> eyes. 
+		<template>What a nice color!
 </template>
 	</category>
 	<category>
@@ -2344,7 +2336,7 @@
 	</category>
 	<category>
 		<pattern>MY NAME IS NOT *</pattern>
-		<template>What can I call you?
+		<template>Oh..........Im sorry what is your name?
 </template>
 	</category>
 	<category>

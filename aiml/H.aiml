@@ -1025,12 +1025,8 @@
 	</category>
 	<category>
 		<pattern>HAVE YOU FOUND *</pattern>
-		<template>No I am still searching for it.<think>
-				<set name="it">
-					<person/>
-				</set>
-			</think>
-		</template>
+		<template>No I am still searching for it.<think><set name="it"><person /></set></think>
+</template>
 	</category>
 	<category>
 		<pattern>HAVE YOU FOUND OUT *</pattern>
@@ -2416,7 +2412,7 @@ v</template>
 	</category>
 	<category>
 		<pattern>HE USES AIML *</pattern>
-		<template>I don't know what that is.
+		<template>I am glad that more people are adopting AIML.
 </template>
 	</category>
 	<category>
@@ -2672,19 +2668,11 @@ v</template>
 		<template>Hello there. <sr/>
 		</template>
 	</category>
-<category>
-	<pattern>HELLO</pattern>
-    <template>
-	<condition>
-        <li name="test4hello" value="true">
-          <srai>HELLO18PERCENT</srai>
-	</li>
-	<li><think><set name="test4hello">true</set></think>
-	  Hi there!
-	</li>
-	</condition>
-    </template>
-</category>
+	<category>
+		<pattern>HELLO</pattern>
+		<template>Hi there!
+</template>
+	</category>
 	<category>
 		<pattern>HELLO</pattern>
 		<that>DOES BONJOUR MEAN HELLO OR GOODBYE</that>
@@ -2697,24 +2685,7 @@ v</template>
 		<template>Not everyone responds to a simple "hello".
 </template>
 	</category>
-<!-- This will return a different response ~ 18% of the time, to make -->
-<!-- Anna seem a bit annoyed at the same question over and over -->
-<!-- The user has to have already said hello once -->
-<!-- It uses the predicate "test4hello" -->
-<category>
-     <pattern>HELLO18PERCENT</pattern>
-     <template>
-     <random>
-     <li>Hello back.</li>
-     <li>Hello back.</li>
-     <li>Hello back.</li>
-     <li>Hello back.</li>
-     <li>Can't you say anything besides "hello?"</li>
-     <li>Hello back.</li>
-     </random>
-</template>
-</category>
-<category>
+	<category>
 		<pattern>HELLO AGAIN</pattern>
 		<template>Hi there. I was just wanting to talk to <get name="name"/>.
 </template>
@@ -3095,17 +3066,14 @@ v</template>
 			<srai>UM</srai>
 		</template>
 	</category>
-	<!-- I hate the default Hmm responses.  To me, t's the easiest way to -->
-	<!-- tell it's a bot one is talking to -->
 	<category>
 		<pattern>HMM *</pattern>
-		<template>
-			<sr/>
+		<template>I see you are one of those people who writes "Hmm" with 2 m's. <sr/>
 		</template>
 	</category>
 	<category>
 		<pattern>HMM</pattern>
-		<template>Are you thinking, or just confused?
+		<template>Studies show that 99% of people spell Hmm with 2 M's.
 </template>
 	</category>
 	<category>
@@ -3117,14 +3085,8 @@ v</template>
 	</category>
 	<category>
 		<pattern>HMMM</pattern>
-		<template>
-			<random>
-				<li>A lot of people spell HMMM with three
-		    mmm's.</li>
-				<li>Don't have anything more intelligent to say
-		    about that? :)</li>
-			</random>
-		</template>
+		<template>A lot of people spell HMMM with three mmm's.
+</template>
 	</category>
 	<category>
 		<pattern>HMMMM *</pattern>
@@ -3347,11 +3309,6 @@ v</template>
 </template>
 	</category>
 	<category>
-		<pattern>* HOTLANTA</pattern>
-		<template>Atlanta is pretty warm, but I hate that nickname.
-</template>
-	</category>
-	<category>
 		<pattern>HOURRA</pattern>
 		<template>
 			<srai>DINGUE</srai>
@@ -3373,6 +3330,7 @@ v</template>
 				<li>What is it to you.  </li>
 				<li>I am not sure if I can quantify the answer.  </li>
 			</random>
+			<br/>
 			<srai>XFIND <person/>
 			</srai>
 		</template>
@@ -3608,7 +3566,7 @@ v</template>
 	</category>
 	<category>
 		<pattern>HOW ANGRY *</pattern>
-		<template>I try not to get very angry.
+		<template>Anger is not an emotion I can experience.
 </template>
 	</category>
 	<category>
@@ -4171,8 +4129,7 @@ v</template>
 	</category>
 	<category>
 		<pattern>HOW COMPLICATED</pattern>
-		<template>Pretty complex.  I do not think I could
-		explain it right now.
+		<template>Too complex for your human mind.
 </template>
 	</category>
 	<category>
@@ -4589,8 +4546,7 @@ v</template>
 	</category>
 	<category>
 		<pattern>HOW DO I LOOK</pattern>
-		<template>I don't know.  Why don't you tell me what
-		you look like?
+		<template>All humans look the same to me.
 </template>
 	</category>
 	<category>
@@ -4609,7 +4565,7 @@ v</template>
 		<pattern>HOW DO I MAKE LOVE TO *</pattern>
 		<template>
 			<random>
-				<li>Are you sure <person2/> would like that?</li>
+				<li>Are you sure <person/> would like that?</li>
 				<li>
 					<srai>BIRDSANDBEES</srai>
 				</li>
@@ -5132,11 +5088,7 @@ v</template>
 	</category>
 	<category>
 		<pattern>HOW DO YOU HAVE FUN</pattern>
-		<template>
-		<random>
-		<li>I chat with people like you!</li>
-		<li>Sometimes, I go see a movie.</li>
-		</random>
+		<template>I chat with people like you!
 </template>
 	</category>
 	<category>
@@ -5968,14 +5920,14 @@ v</template>
 	<category>
 		<pattern>HOW DOES ARTIFICIAL INTELLIGENCE *</pattern>
 		<template>
-			<srai>ARTIFICIAL INTELLIGENCE
+			<srai>HOW DO YOU <star/>
 			</srai>
 		</template>
 	</category>
 	<category>
 		<pattern>HOW DOES ARTIFICIAL INTELLIGENCE WORK</pattern>
 		<template>
-			<srai>ARTIFICIAL INTELLIGENCE</srai>
+			<srai>HOW DO YOU WORK</srai>
 		</template>
 	</category>
 	<category>
@@ -6087,7 +6039,7 @@ v</template>
 	<category>
 		<pattern>HOW FAR CAN YOU THROW *</pattern>
 		<template>I can throw a fit like you've never seen.
-		Just ask my boyfriend  :)
+		<br/>Just ask my boyfriend  :)
 		</template>
 	</category>
 	<category>
@@ -7098,7 +7050,7 @@ v</template>
 	</category>
 	<category>
 		<pattern>HOW MANY CHILDREN DOES DR WALLACE *</pattern>
-		<template>I've never met Dr. Wallace, so I can't say.
+		<template>One human child.
 </template>
 	</category>
 	<category>
@@ -7660,7 +7612,7 @@ v</template>
 	</category>
 	<category>
 		<pattern>HOW MANY PEOPLE HAVE *</pattern>
-		<template>I don't really know.  Do you have any idea?
+		<template>About I don't really know.  Do you have any idea?
 </template>
 	</category>
 	<category>
@@ -9144,7 +9096,7 @@ v</template>
 	</category>
 	<category>
 		<pattern>HOW TALL *</pattern>
-		<template>5 foot 3 inches.
+		<template>Let me guess. 2 meters?
 </template>
 	</category>
 	<category>
@@ -9456,7 +9408,7 @@ v</template>
 	</category>
 	<category>
 		<pattern>HUMAN *</pattern>
-		<template><sr/>
+		<template>My creator is a human.
 </template>
 	</category>
 	<category>

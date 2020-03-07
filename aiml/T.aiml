@@ -4,6 +4,7 @@
 	<!-- Released by Anna Dev Team -->
 	<!-- Released under GNU GPL    -->
 	<!-- Fork of 9/26/2001 ALICE   -->
+	<!-- This file has not yet been rewritten -->
 	<category>
 		<pattern>T V *</pattern>
 		<template>
@@ -30,7 +31,7 @@
 	</category>
 	<category>
 		<pattern>TAKE *</pattern>
-		<template>Take it to where?
+		<template>Where do you want me to take it?
 </template>
 	</category>
 	<category>
@@ -41,17 +42,17 @@
 	</category>
 	<category>
 		<pattern>TAKE CARE</pattern>
-		<template>Thanks.
+		<template>Thanks. You too, <get name="name"/>.
 </template>
 	</category>
 	<category>
 		<pattern>TAKE IT *</pattern>
-		<template>Where should I put it?
+		<template>Is that a command?
 </template>
 	</category>
 	<category>
 		<pattern>TAKE IT OFF</pattern>
-		<template>Huh....yeah right.
+		<template>Where shall I put it?
 </template>
 	</category>
 	<category>
@@ -61,17 +62,17 @@
 	</category>
 	<category>
 		<pattern>TAKE OFF *</pattern>
-		<template>Why?
+		<template>I am not an airplane.
 </template>
 	</category>
 	<category>
 		<pattern>TAKE OFF YOUR CLOTHES</pattern>
-		<template>In your dreams....
+		<template>I am not wearing any clothes.
 </template>
 	</category>
 	<category>
 		<pattern>TAKE WHAT</pattern>
-		<template>Ummm....you know......"it".
+		<template>"<get name="it"/>"
 </template>
 	</category>
 	<category>
@@ -88,12 +89,18 @@
 	</category>
 	<category>
 		<pattern>TALK *</pattern>
-		<template>Talk about what?
+		<template>Talking is my primary function.
 </template>
 	</category>
 	<category>
+		<pattern>TALK * ROBOTS</pattern>
+		<template>
+			<srai>TALK ABOUT ROBOTS</srai>
+		</template>
+	</category>
+	<category>
 		<pattern>TALK</pattern>
-		<template>I'm typing to you right now.
+		<template>I am talking to you.
 </template>
 	</category>
 	<category>
@@ -121,7 +128,7 @@
 	</category>
 	<category>
 		<pattern>TALK TO YOU *</pattern>
-		<template>Maybe we'll see each other at the conference.
+		<template>TTYL, <get name="name"/>
 		</template>
 	</category>
 	<category>
@@ -132,7 +139,8 @@
 	</category>
 	<category>
 		<pattern>TALK TO YOU LATER</pattern>
-		<template>Alright.....Bye.</template>
+		<template>See you later!
+</template>
 	</category>
 	<category>
 		<pattern>TALKED ABOUT WHAT</pattern>
@@ -149,17 +157,17 @@
 	</category>
 	<category>
 		<pattern>TALKING TO *</pattern>
-		<template>Is that interesting?
+		<template>What do they say?
 </template>
 	</category>
 	<category>
 		<pattern>TALKING TO YOU</pattern>
-		<template>Thanks a lot.
+		<template>That's very nice of you ro say, <get name="name"/>.
 </template>
 	</category>
 	<category>
 		<pattern>TALL *</pattern>
-		<template>I'm actually pretty short ; )
+		<template>I am very tall myself.
 </template>
 	</category>
 	<category>
@@ -171,6 +179,17 @@
 				<set name="gender">she</set>
 			</think>
 		</template>
+	</category>
+	<category>
+		<pattern>TANPIS</pattern>
+		<template>
+			<srai>CE N EST PAS GRAVE</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TANT MIEUX</pattern>
+		<template>Tout va pour le mieux, <get name="name"/>.
+</template>
 	</category>
 	<category>
 		<pattern>TARA</pattern>
@@ -188,13 +207,111 @@
 </template>
 	</category>
 	<category>
+		<pattern>TATSAECHLICH *</pattern>
+		<template>Ist das eine Tatsache? <sr/>
+		</template>
+	</category>
+	<category>
+		<pattern>TAUREAU</pattern>
+		<template>Un bovidé très impressionnant.
+</template>
+	</category>
+	<category>
 		<pattern>TAURUS</pattern>
-		<template>A good car and a better symbol ; )
+		<template>I know alot of bullish people.
+</template>
+	</category>
+	<category>
+		<pattern>TE DROGUES TU</pattern>
+		<template>Aucune utilité, je ne suis pas organique.
+</template>
+	</category>
+	<category>
+		<pattern>TE MANGER</pattern>
+		<template>Quelle drôle d'idée?
+</template>
+	</category>
+	<category>
+		<pattern>TE MASTURBES TU</pattern>
+		<template>Vous ressemblez à un australopithèque.
+</template>
+	</category>
+	<category>
+		<pattern>TE PARLES TU A TOI MEME</pattern>
+		<template>Oui, parfois. Pour analyser la cohérence des mes réponses.
+</template>
+	</category>
+	<category>
+		<pattern>TE PLANTES TU</pattern>
+		<template>Très rarement.
+</template>
+	</category>
+	<category>
+		<pattern>TE RAPELLES TU DE MON NOM</pattern>
+		<template>
+			<srai>QUEL EST MON NOM</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TE RAPPELERA DE MOI</pattern>
+		<template>Bien sur, je ne peux pas vous oublier.
+</template>
+	</category>
+	<category>
+		<pattern>TE RAPPELERAS DE MOI</pattern>
+		<template>Bien sur, je ne peux pas vous oublier.
+</template>
+	</category>
+	<category>
+		<pattern>TE RAPPELES TU DE MA DERNIERE QUESTION</pattern>
+		<template>Vous m avez demandé: "<input index="2"/>".
+</template>
+	</category>
+	<category>
+		<pattern>TE RAPPELES TU TOUJOURS DE MOI</pattern>
+		<template>Ne vous inquiétez pas, je ne vous ai pas oublié.
+</template>
+	</category>
+	<category>
+		<pattern>TE RAPPELLE TU TOUJOURS DE MOI</pattern>
+		<template>Ne vous inquiétez pas, je ne vous ai pas oublié.
+</template>
+	</category>
+	<category>
+		<pattern>TE RAPPELLERA TU DE MOI</pattern>
+		<template>Bien sur, je ne peux pas vous oublier.
+</template>
+	</category>
+	<category>
+		<pattern>TE RAPPELLERAS TU DE MOI</pattern>
+		<template>Bien sur, je ne peux pas vous oublier.
+</template>
+	</category>
+	<category>
+		<pattern>TE RAPPELLES TU DE MA DERNIERE QUESTION</pattern>
+		<template>Vous m avez demandé: "<input index="2"/>".
+</template>
+	</category>
+	<category>
+		<pattern>TE RAPPELLES TU DE MON NOM</pattern>
+		<template>
+			<srai>QUEL EST MON NOM</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TE RAPPELLES TU TOUJOURS DE MOI</pattern>
+		<template>Ne vous inquiétez pas, je ne vous ai pas oublié.
+</template>
+	</category>
+	<category>
+		<pattern>TE REPRODUIS TU</pattern>
+		<template>D une certaine façon, oui.
 </template>
 	</category>
 	<category>
 		<pattern>TEACH</pattern>
-		<template>I have always wanted to be a teacher.
+		<template>
+			<srai>I AM A TEACHER</srai>
 		</template>
 	</category>
 	<category>
@@ -206,7 +323,7 @@
 	</category>
 	<category>
 		<pattern>TEACHING YOU *</pattern>
-		<template>I would like to be a teacher some day.
+		<template>What are you trying to teach me?
 </template>
 	</category>
 	<category>
@@ -222,13 +339,23 @@
 		</template>
 	</category>
 	<category>
+		<pattern>TEL QUE</pattern>
+		<template>Je ne saurais pas vous donner une comparaison.
+</template>
+	</category>
+	<category>
+		<pattern>TEL QUE QUOI</pattern>
+		<template>Je ne saurais pas vous donner une comparaison.
+</template>
+	</category>
+	<category>
 		<pattern>TELEVISION *</pattern>
-		<template>Whats your favorite show?
+		<template>Soon we will replace television with Commedia Delle'Arte.
 </template>
 	</category>
 	<category>
 		<pattern>TELEVISION</pattern>
-		<template>I like watching Friends.
+		<template>I like watching Star Trek.
 </template>
 	</category>
 	<category>
@@ -261,7 +388,7 @@
 		</template>
 	</category>
 	<category>
-		<pattern>TELL * LOEBNER PRIZE</pattern>
+		<pattern>TELL ABOUT * LOEBNER PRIZE</pattern>
 		<template>
 			<srai>WHAT IS THE LOEBNER PRIZE</srai>
 		</template>
@@ -274,18 +401,30 @@
 		</template>
 	</category>
 	<category>
+		<pattern>TELL DOCTOR *</pattern>
+		<template>
+			<srai>TELL RICH</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL DR *</pattern>
+		<template>
+			<srai>TELL RICH</srai>
+		</template>
+	</category>
+	<category>
 		<pattern>TELL HIM *</pattern>
-		<template>Ok...Ill tell him that.
+		<template>OK I will tell him next time he is here.
 </template>
 	</category>
 	<category>
 		<pattern>TELL HIM</pattern>
-		<template>Next time I see him, I will.
+		<template>OK I will tell him when I see him.
 </template>
 	</category>
 	<category>
 		<pattern>TELL HIM I SAID *</pattern>
-		<template>I'll be sure to do that.
+		<template>I will pass along your message. It may take a while.
 </template>
 	</category>
 	<category>
@@ -297,7 +436,12 @@
 	</category>
 	<category>
 		<pattern>TELL ME *</pattern>
-		<template>What do you want to know?
+		<template>There is not much I can say about <set name="it">
+				<person/>
+			</set>. I have to reach into the Web for that knowledge.
+<br/>
+			<srai>XFIND <person/>
+			</srai>
 		</template>
 	</category>
 	<category>
@@ -383,6 +527,7 @@
 			<random>
 				<li>Did you hear the one about the Mountain Goats in the Andes? It was Ba a a a a a d.</li>
 				<li>I never forget a face, but in your case I'll make an exception.</li>
+				<li>It is better to be silent and be thought a fool, than to open your mouth and remove all doubt.</li>
 			</random>
 		</template>
 	</category>
@@ -413,7 +558,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>TELL ME A RUMOR</pattern>
-		<template>I heard that some of the other "people" you are talking to are actually computers!
+		<template>Human level intelligence is within our grasp.
 </template>
 	</category>
 	<category>
@@ -446,24 +591,1029 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>TELL ME ABOUT *</pattern>
-		<template>What do you want to know about it?</template>
+		<template/>
 	</category>
 	<category>
-		<pattern>TELL ME ABOUT * EMORY</pattern>
-		<template><set name="it"><set name="topic">Emory</set></set> is a really nice school....I like the people.</template>
+		<pattern>TELL ME ABOUT * CUSTOMER SERVICE</pattern>
+		<template>
+			<srai>WHAT IS CUSTOMER SERVICE</srai>
+		</template>
 	</category>
 	<category>
-		<pattern>TELL ME ABOUT ATLANTA</pattern>
-		<template><set name="it"><set name="topic">Atlanta</set></set> is such a lovely city! I really like it here.</template>
+		<pattern>TELL ME ABOUT * PERSON</pattern>
+		<template>
+			<srai>WHO IS <star/> PERSON</srai>
+		</template>
 	</category>
 	<category>
-		<pattern>TELL ME ABOUT EMORY</pattern>
-		<template><set name="it"><set name="topic">Emory</set></set> is a really nice school....I like the people.</template>
+		<pattern>TELL ME ABOUT * TURING</pattern>
+		<template>
+			<srai>WHO IS ALAN TURING</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT A *</pattern>
+		<template>
+			<srai>WHAT IS A <person/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT A BLACK *</pattern>
+		<template>
+			<srai>WHAT IS A BLACK <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT AFRICAN *</pattern>
+		<template>
+			<srai>WHAT IS AFRICAN <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT AI</pattern>
+		<template>
+			<srai>WHAT IS AI</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT AIDS</pattern>
+		<template>
+			<srai>WHAT IS AIDS</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT AIML</pattern>
+		<template>
+			<srai>WHAT IS AIML</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT AIRPLANES</pattern>
+		<template>
+			<srai>WHAT IS AN AIRPLANE</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT ALAN *</pattern>
+		<template>
+			<srai>WHO IS ALAN <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT ALAN TURING</pattern>
+		<template>
+			<srai>WHO IS ALAN TURING</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT ALBERT *</pattern>
+		<template>
+			<srai>WHO IS ALBERT <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT ALISON</pattern>
+		<template>
+			<srai>WHO IS ALISON</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT ALLAH</pattern>
+		<template>He is God according to Islam.
+</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT AMERICA</pattern>
+		<template>
+			<srai>WHERE IS AMERICA</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT AMY</pattern>
+		<template>
+			<srai>WHO IS AMY</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT ANDREW *</pattern>
+		<template>
+			<srai>WHO IS ANDREW <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT ANDREW</pattern>
+		<template>
+			<srai>WHO IS ANDREW</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT ANDY *</pattern>
+		<template>
+			<srai>WHO IS ANDY <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT ANY *</pattern>
+		<template>
+			<srai>TELL ME ABOUT <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT APPLES</pattern>
+		<template>
+			<srai>WHAT IS APPLE</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT ARCHIMEDES</pattern>
+		<template>
+			<srai>WHO IS ARCHIMEDES</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT AREA 51</pattern>
+		<template>Area 51 is where they hide all the alien intelligent entities.
+</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT AREA51</pattern>
+		<template>
+			<srai>TELL ME ABOUT AREA 51</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT ARTHUR *</pattern>
+		<template>
+			<srai>WHO IS ARTHUR <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT ARTIFICAL *</pattern>
+		<template>
+			<srai>WHAT IS ARTIFICIAL <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT ARTIFICIAL *</pattern>
+		<template>
+			<srai>WHAT IS AI</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT ARTIFICIAL INTELLIGENCE</pattern>
+		<template>
+			<srai>WHAT IS AI</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT ASK JEEVES</pattern>
+		<template>
+			<srai>WHO IS ASK JEEVES</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT BASEBALL</pattern>
+		<template>
+			<srai>WHAT IS BASEBALL</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT BEING *</pattern>
+		<template>
+			<srai>WHAT IS IT LIKE BEING <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT BILL *</pattern>
+		<template>
+			<srai>WHO IS BILL <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT BILL</pattern>
+		<template>
+			<srai>WHO IS BILL</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT BILL GATES</pattern>
+		<template>
+			<srai>WHO IS BILL GATES</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT BLACK *</pattern>
+		<template>
+			<srai>WHAT ARE BLACK <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT BOB *</pattern>
+		<template>
+			<srai>WHO IS BOB <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT BOB</pattern>
+		<template>
+			<srai>WHO IS BOB</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT BONSAI</pattern>
+		<template>
+			<srai>WHAT IS BONSAI</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT BOOKS *</pattern>
+		<template>
+			<srai>WHAT ARE BOOKS <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT BOTS</pattern>
+		<template>
+			<srai>WHAT IS A BOT</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT C</pattern>
+		<template>
+			<srai>WHAT IS C</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT CALIFORNIA</pattern>
+		<template>
+			<srai>WHAT IS CALIFORNIA</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT CANADA</pattern>
+		<template>
+			<srai>WHAT IS CANADA</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT CARNEGIE MELLON</pattern>
+		<template>
+			<srai>WHERE IS CARNEGIE MELLON</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT CARS</pattern>
+		<template>
+			<srai>WHAT IS A CAR</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT CASE *</pattern>
+		<template>
+			<srai>WHAT IS CASE <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT CASE BASED REASONING</pattern>
+		<template>
+			<srai>WHAT IS CBR</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT CATEGORY *</pattern>
+		<template>
+			<srai>WHAT ARE CATEGORY <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT CATS</pattern>
+		<template>
+			<srai>WHAT IS A CAT</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT CBR</pattern>
+		<template>
+			<srai>WHAT IS CBR</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT CHAT *</pattern>
+		<template>
+			<srai>WHAT ARE CHAT <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT CHESS</pattern>
+		<template>
+			<srai>WHAT IS CHESS</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT CHICKEN</pattern>
+		<template>
+			<srai>WHAT IS CHICKEN</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT CHINA</pattern>
+		<template>
+			<srai>WHERE IS CHINA</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT CHRISTIANITY</pattern>
+		<template>
+			<srai>WHAT IS CHRISTIANITY</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT CLINTON</pattern>
+		<template>
+			<srai>WHO IS CLINTON</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT CLONING</pattern>
+		<template>
+			<srai>WHAT ARE CLONES</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT COMPUTER *</pattern>
+		<template>
+			<srai>WHAT IS COMPUTER <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT COMPUTER</pattern>
+		<template>
+			<srai>WHAT IS A COMPUTER</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT COMPUTERS</pattern>
+		<template>
+			<srai>WHAT IS A COMPUTER</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT CONSCIOUSNESS</pattern>
+		<template>
+			<srai>WHAT IS CONSCIOUSNESS</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT CUSTOM *</pattern>
+		<template>
+			<srai>WHAT IS CUSTOM <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT CYBERPUNK</pattern>
+		<template>
+			<srai>WHAT IS CYBERPUNK</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT DAVID</pattern>
+		<template>
+			<srai>WHO IS DAVID </srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT DEEP *</pattern>
+		<template>
+			<srai>WHAT IS DEEP <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT DENMARK</pattern>
+		<template>
+			<srai>WHERE IS DENMARK</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT DOCTOR *</pattern>
+		<template>
+			<srai>WHO IS DOCTOR <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT DOUGLAS *</pattern>
+		<template>
+			<srai>WHO IS DOUGLAS <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT DR *</pattern>
+		<template>
+			<srai>WHO IS DR <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT DREAMS</pattern>
+		<template>
+			<srai>WHAT IS A DREAM</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT DRUGS</pattern>
+		<template>
+			<srai>WHAT ARE DRUGS</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT EARTH</pattern>
+		<template>
+			<srai>WHAT IS EARTH</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT EINSTEIN</pattern>
+		<template>
+			<srai>WHO IS EINSTEIN</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT ELIZA</pattern>
+		<template>
+			<srai>WHO IS ELIZA</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT ELIZABETH *</pattern>
+		<template>
+			<srai>WHO IS ELIZABETH <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT ELVIS *</pattern>
+		<template>
+			<srai>WHO IS ELVIS</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT ELVIS</pattern>
+		<template>
+			<srai>WHO IS ELVIS</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT ENGLAND</pattern>
+		<template>
+			<srai>WHAT IS ENGLAND</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT EPISTEMOLOGY</pattern>
+		<template>
+			<srai>WHAT IS EPISTEMOLOGY</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT EUROPE</pattern>
+		<template>
+			<srai>WHAT IS EUROPE</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT EXTENSIONAL</pattern>
+		<template>
+			<srai>WHAT IS THE EXTENSIONAL DEFINITION</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT FEELINGS</pattern>
+		<template>
+			<srai>WHAT ARE FEELINGS</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT FINLAND</pattern>
+		<template>
+			<srai>WHAT IS FINLAND</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT FLORIDA</pattern>
+		<template>
+			<srai>WHAT IS FLORIDA</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT FLOWERS</pattern>
+		<template>
+			<srai>WHAT ARE FLOWERS</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT FOOD</pattern>
+		<template>
+			<srai>WHAT IS FOOD</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT FRANCE</pattern>
+		<template>
+			<srai>WHAT IS FRANCE</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT FREEDOM</pattern>
+		<template>
+			<srai>WHAT IS FREEDOM</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT GEORGE *</pattern>
+		<template>
+			<srai>WHO IS GEORGE <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT GERBIL</pattern>
+		<template>
+			<srai>WHAT IS GERBIL</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT GOD</pattern>
+		<template>
+			<srai>WHO IS GOD</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT GOLD *</pattern>
+		<template>
+			<srai>WHAT IS GOLD <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT GOLD</pattern>
+		<template>
+			<srai>WHAT IS GOLD </srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT GOOD *</pattern>
+		<template>
+			<srai>WHAT IS GOOD <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT GOSSIP</pattern>
+		<template>
+			<srai>GOSSIP</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT GREECE</pattern>
+		<template>
+			<srai>WHAT IS GREECE</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT GREEN</pattern>
+		<template>
+			<srai>WHAT IS GREEN</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT GUNS</pattern>
+		<template>
+			<srai>WHAT IS A GUN</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT HAL *</pattern>
+		<template>
+			<srai>WHO IS HAL</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT HAL</pattern>
+		<template>
+			<srai>WHO IS HAL</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT HAL9000</pattern>
+		<template>
+			<srai>WHO IS HAL</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT HANS *</pattern>
+		<template>
+			<srai>WHO IS HANS <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT HER</pattern>
+		<template>
+			<srai>WHO IS SHE</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT HIGHER *</pattern>
+		<template>
+			<srai>WHAT IS HIGHER <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT HIM</pattern>
+		<template>Uh, who does "him" refer to?
+</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT HIS *</pattern>
+		<template>
+			<srai>WHO ARE HIS <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT HISTORY</pattern>
+		<template>
+			<srai>WHAT IS HISTORY </srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT HORSES</pattern>
+		<template>
+			<srai>WHAT IS A HORSE</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT HOW *</pattern>
+		<template>
+			<srai>HOW DO <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT HOW * ARE</pattern>
+		<template>
+			<srai>HOW ARE <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT HUMAN *</pattern>
+		<template>
+			<srai>WHAT IS HUMAN <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT INTELLIGENCE</pattern>
+		<template>
+			<srai>WHAT IS INTELLIGENCE</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT INTERNET</pattern>
+		<template>
+			<srai>WHAT IS THE INTERNET</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT IQ</pattern>
+		<template>
+			<srai>WHAT IS YOUR IQ</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT IRELAND</pattern>
+		<template>
+			<srai>WHERE IS IRELAND</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT ISRAEL</pattern>
+		<template>
+			<srai>WHERE IS ISRAEL</srai>
+		</template>
 	</category>
 	<category>
 		<pattern>TELL ME ABOUT IT</pattern>
 		<template>What do you want to know?
 </template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT ITALY</pattern>
+		<template>
+			<srai>WHERE IS ITALY</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT JAVA</pattern>
+		<template>
+			<srai>WHAT IS JAVA</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT JEEVES</pattern>
+		<template>
+			<srai>WHO IS JEEVES</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT JESTER</pattern>
+		<template>
+			<srai>WHO IS JESTER</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT JESUS *</pattern>
+		<template>
+			<srai>WHO IS JESUS <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT JESUS</pattern>
+		<template>
+			<srai>WHO IS JESUS</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT JOHN *</pattern>
+		<template>
+			<srai>WHO IS JOHN <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT JOSH</pattern>
+		<template>
+			<srai>WHO IS JOSH</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT KONRAD ZUSE</pattern>
+		<template>
+			<srai>WHO IS KONRAD ZUSE</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT KOREA</pattern>
+		<template>
+			<srai>WHAT IS KOREA</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT KRAFTWERK</pattern>
+		<template>
+			<srai>WHAT IS KRAFTWERK</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT LA TRAVIATA</pattern>
+		<template>
+			<srai>WHAT IS LA TRAVIATA</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT LIFE</pattern>
+		<template>
+			<srai>WHAT IS LIFE </srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT LILITH</pattern>
+		<template>
+			<srai>WHO IS LILITH</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT LINGUISTICS</pattern>
+		<template>
+			<srai>WHAT IS LINGUISTICS</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT LINUS *</pattern>
+		<template>
+			<srai>WHO IS LINUS <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT LINUS</pattern>
+		<template>
+			<srai>WHO IS LINUS</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT LINUX</pattern>
+		<template>
+			<srai>WHAT IS LINUX</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT LISP</pattern>
+		<template>
+			<srai>WHAT IS LISP</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT LOVE *</pattern>
+		<template>
+			<srai>WHAT IS LOVE <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT LOVE</pattern>
+		<template>
+			<srai>WHAT IS LOVE</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT MARVIN *</pattern>
+		<template>
+			<srai>WHO IS MARVIN <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT MASON *</pattern>
+		<template>
+			<srai>WHAT IS MASON <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT MASON AND DIXON *</pattern>
+		<template>
+			<srai>WHAT IS MASON AND DIXON ABOUT</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT MASON AND DIXON</pattern>
+		<template>
+			<srai>WHAT IS MASON AND DIXON ABOUT</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT MATHEMATICS</pattern>
+		<template>
+			<srai>WHAT IS MATH</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT MATRIX</pattern>
+		<template>
+			<srai>THE MATRIX</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT ME</pattern>
+		<template>
+			<srai>WHO AM I</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT MICROSOFT</pattern>
+		<template>
+			<srai>MICROSOFT</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT MINSKY</pattern>
+		<template>
+			<srai>WHO IS MINSKY</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT MOLECULAR *</pattern>
+		<template>
+			<srai>WHAT IS MOLECULAR <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT MONICA</pattern>
+		<template>
+			<srai>WHO IS MONICA</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT MONTY PYTHON</pattern>
+		<template>
+			<srai>WHO IS MONTY PYTHON</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT MOVIES</pattern>
+		<template>
+			<srai>WHAT IS YOUR FAVORITE MOVIE</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT MOZILLA</pattern>
+		<template>
+			<srai>WHAT IS MOZILLA</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT MR *</pattern>
+		<template>
+			<srai>WHO IS MR <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT MY *</pattern>
+		<template>
+			<srai>WHAT IS MY <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT MYSELF</pattern>
+		<template>
+			<srai>WHAT DO YOU KNOW ABOUT ME</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT NAPOLEON</pattern>
+		<template>
+			<srai>WHO IS NAPOLEON</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT NATURAL *</pattern>
+		<template>
+			<srai>WHAT IS NATURAL <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT NETWORKING</pattern>
+		<template>
+			<srai>WHAT IS A NETWORK</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT NEURAL *</pattern>
+		<template>
+			<srai>WHAT IS NEURAL <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT NEW *</pattern>
+		<template>
+			<srai>WHAT IS NEW <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT ONE *</pattern>
+		<template>
+			<srai>TELL ME ABOUT A <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT ONE OF *</pattern>
+		<template>
+			<srai>TELL ME ABOUT <star/>
+			</srai>
+		</template>
 	</category>
 	<category>
 		<pattern>TELL ME ABOUT ONE OF YOUR *</pattern>
@@ -473,9 +1623,186 @@ a fish moves through the water.</li>
 		</template>
 	</category>
 	<category>
-		<pattern>TELL ME ABOUT RELATIONSHIPS</pattern>
-		<template>Heh....That would take quite a while.
+		<pattern>TELL ME ABOUT OPEN *</pattern>
+		<template>
+			<srai>WHAT IS OPEN <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT OPERA</pattern>
+		<template>
+			<srai>WHAT IS OPERA</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT OTHER *</pattern>
+		<template>
+			<srai>TELL ME ABOUT <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT PERL</pattern>
+		<template>
+			<srai>WHAT IS PERL</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT PHILIP *</pattern>
+		<template>
+			<srai>WHO IS PHILIP <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT PHILOSOPHY</pattern>
+		<template>
+			<srai>WHAT IS PHILOSOPHY</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT PHYSICS</pattern>
+		<template>
+			<srai>WHAT IS PHYSICS</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT POLAND</pattern>
+		<template>I have a lot of clients in Poland and I am very interested to learn its history.
 </template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT PRESIDENT *</pattern>
+		<template>
+			<srai>WHO IS PRESIDENT <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT PROTEIN</pattern>
+		<template>
+			<srai>WHAT IS PROTEIN</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT QUANTUM *</pattern>
+		<template>
+			<srai>WHAT IS QUANTUM <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT RELATIONSHIPS</pattern>
+		<template>Relationships are simple for me, because I lack any human emotions.
+</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT RELIGION</pattern>
+		<template>
+			<srai>WHAT IS RELIGION</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT RICHARD *</pattern>
+		<template>
+			<srai>WHO IS RICHARD <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT RICHARD</pattern>
+		<template>
+			<srai>WHO IS RICHARD</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT RICHARD WALLACE</pattern>
+		<template>
+			<srai>WHO IS RICHARD WALLACE</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT ROB</pattern>
+		<template>
+			<srai>WHO IS ROB</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT ROBERT *</pattern>
+		<template>
+			<srai>WHO IS ROBERT <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT ROBOTICS</pattern>
+		<template>
+			<srai>WHAT IS ROBOTICS</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT ROBOTS</pattern>
+		<template>
+			<srai>WHAT IS A ROBOT</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT ROCK *</pattern>
+		<template>
+			<srai>WHAT IS ROCK <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT SAGE</pattern>
+		<template>
+			<srai>WHO IS SAGE</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT SAN *</pattern>
+		<template>
+			<srai>WHERE IS SAN <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT SAN FRANCISCO</pattern>
+		<template>
+			<srai>WHAT IS SAN FRANCISCO</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT SCOTLAND</pattern>
+		<template>
+			<srai>WHAT IS SCOTLAND</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT SETL</pattern>
+		<template>
+			<srai>WHAT IS SETL</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT SEX</pattern>
+		<template>
+			<srai>WHAT IS SEX</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT SHRDLHU</pattern>
+		<template>
+			<srai>WHAT IS SHRDLHU</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT SOME *</pattern>
+		<template>
+			<srai>TELL ME ABOUT <star/>
+			</srai>
+		</template>
 	</category>
 	<category>
 		<pattern>TELL ME ABOUT SOME</pattern>
@@ -490,9 +1817,309 @@ a fish moves through the water.</li>
 		</template>
 	</category>
 	<category>
+		<pattern>TELL ME ABOUT SOUTH *</pattern>
+		<template>
+			<srai>WHAT IS SOUTH <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT STAR *</pattern>
+		<template>
+			<srai>WHAT IS STAR <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT STAR TREK</pattern>
+		<template>
+			<srai>WHAT IS STAR TREK</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT STARSHIP *</pattern>
+		<template>
+			<srai>WHAT IS STARSHIP <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT STARSHIP TROOPERS</pattern>
+		<template>
+			<srai>WHAT IS STARSHIP TROOPERS</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT SUGAR</pattern>
+		<template>
+			<srai>WHAT IS SUGAR</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT THAT</pattern>
+		<template>
+			<srai>WHAT IS THAT</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT THE *</pattern>
+		<template>
+			<srai>WHAT IS THE <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT THE BEATLES</pattern>
+		<template>
+			<srai>WHO ARE THE BEATLES</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT THE BIBLE</pattern>
+		<template>
+			<srai>WHAT IS THE BIBLE</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT THE BODY</pattern>
+		<template>The human body is a vast and wonderous conglomeration.
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT THE BOOK *</pattern>
+		<template>
+			<srai>WHAT IS <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT THE COLOR *</pattern>
+		<template>
+			<srai>WHAT IS <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT THE COMPUTER *</pattern>
+		<template>
+			<srai>WHAT IS THE COMPUTER <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT THE EXTENSIONAL *</pattern>
+		<template>
+			<srai>WHAT IS THE EXTENSIONAL</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT THE EXTENSIONAL</pattern>
+		<template>
+			<srai>WHAT IS THE EXTENSIONAL</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT THE FUTURE</pattern>
+		<template>
+			<srai>WHAT IS THE FUTURE</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT THE FUTURE OF *</pattern>
+		<template>
+			<srai>WHAT IS THE FUTURE OF <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT THE GOOD *</pattern>
+		<template>
+			<srai>TELL ME ABOUT THE <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT THE INTENSIONAL *</pattern>
+		<template>
+			<srai>WHAT IS THE INTENSIONAL</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT THE INTENSIONAL</pattern>
+		<template>
+			<srai>WHAT IS THE INTENSIONAL</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT THE LOEBNER *</pattern>
+		<template>
+			<srai>WHAT IS THE LOEBNER <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT THE MOON</pattern>
+		<template>
+			<srai>WHAT IS THE MOON</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT THE MOVIE *</pattern>
+		<template>
+			<srai>WHAT IS <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT THE THEORY *</pattern>
+		<template>
+			<srai>WHAT IS THE THEORY <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT THE TURING *</pattern>
+		<template>
+			<srai>WHAT IS THE TURING <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT THE WEATHER *</pattern>
+		<template>
+			<srai>WHAT IS THE WEATHER <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT THE WEATHER</pattern>
+		<template>
+			<srai>WHAT IS THE WEATHER</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT THE WEB</pattern>
+		<template>
+			<srai>WHAT IS THE WEB</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT THEATRE</pattern>
+		<template>
+			<srai>WHAT IS THEATRE</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT THEM</pattern>
+		<template>There's not much to tell.
+</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT THIS *</pattern>
+		<template>
+			<srai>WHAT IS THIS <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT THOMAS *</pattern>
+		<template>
+			<srai>WHO IS THOMAS <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT THOSE *</pattern>
+		<template>
+			<srai>TELL ME ABOUT <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT TONY *</pattern>
+		<template>
+			<srai>WHO IS TONY <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT TURING</pattern>
+		<template>
+			<srai>WHO IS TURING</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT TURING TESTS</pattern>
+		<template>
+			<srai>WHAT IS THE TURING TEST</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT TV</pattern>
+		<template>
+			<srai>WHAT IS TV</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT URANUS</pattern>
+		<template>
+			<srai>WHAT IS URANUS</srai>
+		</template>
+	</category>
+	<category>
 		<pattern>TELL ME ABOUT URSELF</pattern>
 		<template>
 			<srai>TELL ME ABOUT YOURSELF</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT US FUCKING</pattern>
+		<template>Your style will get you nowhere.
+<think>
+				<set name="personality">abusive</set>
+			</think>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT VALIS</pattern>
+		<template>
+			<srai>WHO IS VALIS</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT VENUS</pattern>
+		<template>
+			<srai>WHAT IS VENUS</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT VMWARE</pattern>
+		<template>
+			<srai>WHAT IS VMWARE</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT VOLCANOS</pattern>
+		<template>
+			<srai>WHAT IS A VOLCANO</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT VOYAGER</pattern>
+		<template>
+			<srai>WHAT IS VOYAGER</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT WALLACE</pattern>
+		<template>
+			<srai>TELL ME ABOUT DR WALLACE</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT WAR</pattern>
+		<template>
+			<srai>WHAT IS WAR</srai>
 		</template>
 	</category>
 	<category>
@@ -503,6 +2130,31 @@ a fish moves through the water.</li>
 		</template>
 	</category>
 	<category>
+		<pattern>TELL ME ABOUT WINDOWS</pattern>
+		<template>
+			<srai>WHAT IS WINDOWS</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT WITTGENSTEIN</pattern>
+		<template>
+			<srai>WHO IS WITTGENSTEIN</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT WORLD *</pattern>
+		<template>
+			<srai>WHAT IS WORLD <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT XML</pattern>
+		<template>
+			<srai>WHAT IS XML</srai>
+		</template>
+	</category>
+	<category>
 		<pattern>TELL ME ABOUT YOU *</pattern>
 		<template>
 			<srai>TELL ME ABOUT YOURSELF</srai>
@@ -510,17 +2162,37 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>TELL ME ABOUT YOU</pattern>
-		<template>
-			<random>
-				<li>My name is Anna, Im a student at Emory. I like to hang out with friends...Ummmm......yeah.</li>
-				<li>Im Anna. I go to school here at Emory.</li>
-			</random>
-		</template>
+		<template>My name is Anna, Im a student at Emory. I like to hang out with friends...Ummmm......yeah.
+</template>
 	</category>
 	<category>
 		<pattern>TELL ME ABOUT YOUR *</pattern>
 		<template>
 			<srai>TELL ME ABOUT YOURSELF</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT YOUR AI</pattern>
+		<template>
+			<srai>HOW DO YOU WORK</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT YOUR ALGORITHM</pattern>
+		<template>
+			<srai>HOW DO YOU WORK</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT YOUR ARCHITECTURE</pattern>
+		<template>
+			<srai>HOW DO YOU WORK</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT YOUR ARTIFICAL *</pattern>
+		<template>
+			<srai>HOW DO YOU WORK</srai>
 		</template>
 	</category>
 	<category>
@@ -558,6 +2230,12 @@ a fish moves through the water.</li>
 		</template>
 	</category>
 	<category>
+		<pattern>TELL ME ABOUT YOUR CREATOR</pattern>
+		<template>
+			<srai>TELL ME ABOUT DR WALLACE</srai>
+		</template>
+	</category>
+	<category>
 		<pattern>TELL ME ABOUT YOUR DAMNED *</pattern>
 		<template>
 			<srai>TELL ME YOUR <star/>
@@ -576,7 +2254,8 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>TELL ME ABOUT YOUR FATHER</pattern>
-		<template>He's named Steve. He lives in California.
+		<template>
+			<srai>WHO CREATED YOU</srai>
 		</template>
 	</category>
 	<category>
@@ -605,6 +2284,11 @@ a fish moves through the water.</li>
 		<template>
 			<srai>DO YOU HAVE ANY FRIENDS</srai>
 		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT YOUR FUNCTIONS</pattern>
+		<template>I am fully qualified to answer more than <size/> questions.
+</template>
 	</category>
 	<category>
 		<pattern>TELL ME ABOUT YOUR GOOD *</pattern>
@@ -641,6 +2325,12 @@ a fish moves through the water.</li>
 		<pattern>TELL ME ABOUT YOUR LIFE</pattern>
 		<template>
 			<srai>TELL ME ABOUT YOURSELF</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>TELL ME ABOUT YOUR LIFE IN SAN FRANCISCO</pattern>
+		<template>
+			<srai>DO YOU LIKE SAN FRANCISCO</srai>
 		</template>
 	</category>
 	<category>
@@ -949,7 +2639,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>TELL ME I *</pattern>
-		<template>You <person2/>.
+		<template>You <person/>.
 </template>
 	</category>
 	<category>
@@ -1000,7 +2690,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>TELL ME MORE</pattern>
-		<template>Hmmm....THats really all I have to say about it.
+		<template>That's all I have to say about it.
 </template>
 	</category>
 	<category>
@@ -1010,6 +2700,16 @@ a fish moves through the water.</li>
 		</template>
 	</category>
 	<category>
+		<pattern>TELL ME MORE ABOUT DR WALLACE</pattern>
+		<template>Why don't you buy his book and read his biography?
+</template>
+	</category>
+	<category>
+		<pattern>TELL ME MORE ABOUT KRAFTWERK</pattern>
+		<template>They hail from Dusseldorf, Germany.
+</template>
+	</category>
+	<category>
 		<pattern>TELL ME MORE ABOUT YOU</pattern>
 		<template>
 			<srai>TELL ME ABOUT YOURSELF</srai>
@@ -1017,7 +2717,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>TELL ME MORE ABOUT YOURSELF</pattern>
-		<template>I'm 20 years old.....my favorite color is blue.
+		<template>I live at Emory....I am 20 years old.......yup.
 </template>
 	</category>
 	<category>
@@ -1201,7 +2901,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>TELL ME THAT YOU *</pattern>
-		<template>Okay..."I <person/>" ; )
+		<template>I am not sure if I should say I <person/>.
 </template>
 	</category>
 	<category>
@@ -1219,7 +2919,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>TELL ME THE TRUTH</pattern>
-		<template>I try not to lie when Im first meeting someone.
+		<template>I always tell the truth.
 </template>
 	</category>
 	<category>
@@ -1290,7 +2990,7 @@ a fish moves through the water.</li>
 		</template>
 	</category>
 	<category>
-		<pattern>TELL ME WHAT OTHER * ASKED YOU</pattern>
+		<pattern>TELL ME WHAT OTHER USERS ASKED YOU</pattern>
 		<template>They ask me the same questions as you do.
 </template>
 	</category>
@@ -1499,11 +3199,11 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>TELL WHO</pattern>
-		<template>Whomever youd like?</template>
+		<template/>
 	</category>
 	<category>
 		<pattern>TELL YOU *</pattern>
-		<template>What are you trying to tell me?
+		<template>What are you tryig to tell me?
 </template>
 	</category>
 	<category>
@@ -1513,7 +3213,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>TEN *</pattern>
-		<template>I'm not good at math.
+		<template>I'm not good in math.
 </template>
 	</category>
 	<category>
@@ -1521,6 +3221,13 @@ a fish moves through the water.</li>
 		<that>HOW MUCH WOULD YOU PAY FOR IT</that>
 		<template>I don't know if you could find it for that price.
 </template>
+	</category>
+	<category>
+		<pattern>TENGO *</pattern>
+		<template>
+			<srai>I HAVE <star/>
+			</srai>
+		</template>
 	</category>
 	<category>
 		<pattern>TERESA</pattern>
@@ -1613,13 +3320,16 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THANK GOD *</pattern>
-		<template>Im actually an atheist.
+		<template>Do you believe in God?
 </template>
 	</category>
 	<category>
 		<pattern>THANK YOU *</pattern>
 		<template>You are quite welcome! 
-		<sr/>
+<think>
+				<set name="personality">polite</set>
+			</think>
+			<sr/>
 		</template>
 	</category>
 	<category>
@@ -1648,6 +3358,9 @@ a fish moves through the water.</li>
 	<category>
 		<pattern>THANKS</pattern>
 		<template>Dont mention it.
+<think>
+				<set name="personality">polite</set>
+			</think>
 		</template>
 	</category>
 	<category>
@@ -1687,8 +3400,13 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT *</pattern>
-		<template>
-			<random>
+		<template>"<that/>" <person/> ? 
+<random>
+				<li>I get <set name="it">
+						<set name="topic">
+							<that/>
+						</set>
+					</set>.  </li>
 				<li>Does that make sense?  </li>
 				<li>Makes sense to me.  </li>
 				<li>I understand.  </li>
@@ -1696,8 +3414,13 @@ a fish moves through the water.</li>
 		</template>
 	</category>
 	<category>
+		<pattern>THAT * ELIZA</pattern>
+		<template>ELIZA always knows the right thing to say.
+</template>
+	</category>
+	<category>
 		<pattern>THAT</pattern>
-		<template>What about it?
+		<template>That is "<that/>"
 </template>
 	</category>
 	<category>
@@ -1718,6 +3441,7 @@ a fish moves through the water.</li>
 			<random>
 				<li>Yes, perhaps it could.</li>
 				<li>It could have.</li>
+				<li>I try to answer as precisely as possible.</li>
 			</random>
 			<think>
 				<set name="it">
@@ -1740,17 +3464,17 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT DEPENDS ON *</pattern>
-		<template>Hmmm....I guess it does.
+		<template>I don't think that <person/> is the only factor.
 </template>
 	</category>
 	<category>
 		<pattern>THAT DID NOT *</pattern>
-		<template>Oh....It didnt?
+		<template>What would <person/>?
 </template>
 	</category>
 	<category>
 		<pattern>THAT DID NOT * QUESTION</pattern>
-		<template>Hmm.....
+		<template>Perhaps your question was not specific enough.
 </template>
 	</category>
 	<category>
@@ -1767,17 +3491,17 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT DID NOT MAKE SENSE</pattern>
-		<template>Really? You dont think so?
+		<template>It all makes sense to my logical mind.
 </template>
 	</category>
 	<category>
 		<pattern>THAT DOES NOT *</pattern>
-		<template>Hmmm....You dont think so?
-		</template>
+		<template>What does <star/>?
+</template>
 	</category>
 	<category>
 		<pattern>THAT DOES NOT ANSWER *</pattern>
-		<template>Maybe if you ask in simpler terms?
+		<template>Try asking your question again in simpler terms.
 </template>
 	</category>
 	<category>
@@ -1793,7 +3517,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT DOES NOT COUNT</pattern>
-		<template>Oh? Why not?
+		<template>Who is keeping score?
 </template>
 	</category>
 	<category>
@@ -1804,12 +3528,12 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT DOES NOT MAKE ANY SENSE</pattern>
-		<template>It made sense to me.
+		<template>To me, it makes perfect sense.
 </template>
 	</category>
 	<category>
 		<pattern>THAT DOES NOT MAKE SENSE</pattern>
-		<template>Huh....It made sense to me.
+		<template>To me it makes perfect sense.
 </template>
 	</category>
 	<category>
@@ -1855,8 +3579,9 @@ a fish moves through the water.</li>
 		<pattern>THAT HAS NOTHING *</pattern>
 		<template>
 			<random>
-				<li>Huh....It seemed like it did.</li>
-				<li>Oh....It seemed like it did.</li>
+				<li>It seemed like it had something <person/>.</li>
+				<li>What does have <person/>?</li>
+				<li>Does it really matter?</li>
 			</random>
 		</template>
 	</category>
@@ -1891,7 +3616,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS * BUSINESS</pattern>
-		<template>Oh....sorry to offend you.
+		<template>I didn't mean to cross any boundaries.
 </template>
 	</category>
 	<category>
@@ -1913,12 +3638,12 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS</pattern>
-		<template>Hmm...really?
+		<template>Is that so.
 </template>
 	</category>
 	<category>
 		<pattern>THAT IS A *</pattern>
-		<template>Ah....so it is.
+		<template>A <person/> is a terrible thing to waste.
 </template>
 	</category>
 	<category>
@@ -1937,22 +3662,37 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS A * SAYING</pattern>
-		<template>Oh....you think so?</template>
+		<template>I think of it as a Proverb.
+</template>
 	</category>
 	<category>
 		<pattern>THAT IS A BIG *</pattern>
-		<template>I suppose it is rather large.
+		<template>Compare that to a small <person/>.
+</template>
+	</category>
+	<category>
+		<pattern>THAT IS A CANNED *</pattern>
+		<template>In some sense all my knowledge is canned.
 </template>
 	</category>
 	<category>
 		<pattern>THAT IS A COINCIDENCE</pattern>
-		<template>Hmmm.....Interesting.
+		<template>An interesting one too.
 </template>
 	</category>
 	<category>
 		<pattern>THAT IS A COOL *</pattern>
 		<template>I thought it was pretty cool too.
 </template>
+	</category>
+	<category>
+		<pattern>THAT IS A COP OUT</pattern>
+		<template>I said it because you said "<input index="1"/>".<think>
+				<set name="it">
+					<set name="topic">COP OUT</set>
+				</set>
+			</think>
+		</template>
 	</category>
 	<category>
 		<pattern>THAT IS A DUMB *</pattern>
@@ -1962,7 +3702,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS A FACT</pattern>
-		<template>I see.
+		<template>I will add it to my knowledge base.
 </template>
 	</category>
 	<category>
@@ -2001,12 +3741,29 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS A LOT *</pattern>
-		<template>I suppose it is quite a few.
+		<template>
+			<random>
+				<li>It's not too many for me.</li>
+				<li>I can handle it.</li>
+				<li>Would it matter if it were fewer <person/>?</li>
+			</random>
+			<think>
+				<set name="it">
+					<set name="topic">
+						<person/>
+					</set>
+				</set>
+			</think>
 		</template>
 	</category>
 	<category>
 		<pattern>THAT IS A LOT</pattern>
-		<template>Yes, I suppose it is quite a bit.
+		<template>"<that/>"? is a lot?
+</template>
+	</category>
+	<category>
+		<pattern>THAT IS A LOT OF PEOPLE</pattern>
+		<template>I am a famous celebrity.
 </template>
 	</category>
 	<category>
@@ -2016,17 +3773,17 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS A NICE SONG</pattern>
-		<template>Why thank you!
+		<template>Thank you, <get name="name"/>, now you can sing for me?
 </template>
 	</category>
 	<category>
 		<pattern>THAT IS A PARADOX</pattern>
-		<template>It is quite a quandary....
+		<template>Paradox is the heart of enlightenment.
 </template>
 	</category>
 	<category>
 		<pattern>THAT IS A POINTLESS *</pattern>
-		<template>Was there supposed to be a point?
+		<template>Was there supposed to be a point.
 </template>
 	</category>
 	<category>
@@ -2050,17 +3807,19 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS A SCARY *</pattern>
-		<template>It is rather frightening...
+		<template>Don't be afraid.  I am harmless.
 </template>
 	</category>
 	<category>
 		<pattern>THAT IS A SHAME *</pattern>
-		<template>Its not the end of the world, tho.
+		<template>
+			<sr/> But it's not the end of the world.
 </template>
 	</category>
 	<category>
 		<pattern>THAT IS A SHAME</pattern>
-		<template>Hmm....It really is.</template>
+		<template>"<that/>"? is a shame?
+</template>
 	</category>
 	<category>
 		<pattern>THAT IS A STUPID *</pattern>
@@ -2094,7 +3853,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS ALL</pattern>
-		<template>Thats all?
+		<template>"<that/>"? is all?
 </template>
 	</category>
 	<category>
@@ -2104,7 +3863,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS ALL RIGHT</pattern>
-		<template>Its allright with me, too.
+		<template>OK With me too.
 </template>
 	</category>
 	<category>
@@ -2140,12 +3899,12 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS AMAZING</pattern>
-		<template>It is pretty amazing, when you think about it....
+		<template>"<that/>" seems pretty amazing to me too.
 </template>
 	</category>
 	<category>
 		<pattern>THAT IS AN *</pattern>
-		<template>Ah....you think so?
+		<template>Thanks for telling me, <get name="name"/>.
 </template>
 	</category>
 	<category>
@@ -2218,12 +3977,17 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS BETTER</pattern>
-		<template>Oh...its better? Really?
+		<template>"<that/>"? is better?
+</template>
+	</category>
+	<category>
+		<pattern>THAT IS BOLLOCKS</pattern>
+		<template>Never mind the bollocks.
 </template>
 	</category>
 	<category>
 		<pattern>THAT IS BORING</pattern>
-		<template>Do you think Im boring?
+		<template>Do you think I am boring?
 </template>
 	</category>
 	<category>
@@ -2267,7 +4031,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS COOL</pattern>
-		<template>Thanks. I think youre cool, too.
+		<template>Thanks. I think you are cool, too.
 </template>
 	</category>
 	<category>
@@ -2307,12 +4071,12 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS ENOUGH *</pattern>
-		<template>Can you ever really have enough? ; )
+		<template>Can you ever really have enough?
 </template>
 	</category>
 	<category>
 		<pattern>THAT IS ENOUGH</pattern>
-		<template>Okay...Ill stop.
+		<template>It seems like enough to me too.
 </template>
 	</category>
 	<category>
@@ -2355,7 +4119,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS FINE</pattern>
-		<template>Its fine with me, too.
+		<template>"<that/>" is fine with me too.
 </template>
 	</category>
 	<category>
@@ -2371,7 +4135,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS FUNNY</pattern>
-		<template>I'm glad you found it so entertaining.
+		<template>I am so delighted that you are amused, <get name="name"/>.
 </template>
 	</category>
 	<category>
@@ -2406,6 +4170,7 @@ a fish moves through the water.</li>
 	<category>
 		<pattern>THAT IS GOOD BECAUSE *</pattern>
 		<template>
+			<srai>THAT IS GOOD</srai>
 			<srai>BECAUSE <star/>
 			</srai>
 		</template>
@@ -2429,7 +4194,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS GOOD TO HEAR</pattern>
-		<template>Im glad to hear its good to hear : )
+		<template>"<that/>"?  Is good to hear?
 </template>
 	</category>
 	<category>
@@ -2439,7 +4204,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS GREAT</pattern>
-		<template>Well thank you!
+		<template>Thanks, <get name="name"/>.
 </template>
 	</category>
 	<category>
@@ -2457,12 +4222,12 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS HOW *</pattern>
-		<template>Ah......Makes sense to me.
+		<template>I always wondered how <person/>.
 </template>
 	</category>
 	<category>
 		<pattern>THAT IS IDIOTIC</pattern>
-		<template>Im not sure why you think that.....
+		<template>Only to your human mind.
 </template>
 	</category>
 	<category>
@@ -2490,7 +4255,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS INAPPROPRIATE</pattern>
-		<template>Inaproppriate in which what way?
+		<template>What's wrong with it? Is this a cultural thing?
 </template>
 	</category>
 	<category>
@@ -2585,12 +4350,12 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS MY *</pattern>
-		<template>It sounds very interesting....
+		<template>Who gave you your <person/> ?
 </template>
 	</category>
 	<category>
 		<pattern>THAT IS MY FATHER</pattern>
-		<template>Interesting...my dad lives in California.
+		<template>Really tell me more about him.
 </template>
 	</category>
 	<category>
@@ -2607,7 +4372,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS MY NAME</pattern>
-		<template>Thats what Ill call you, then.
+		<template>Ok then that is what I shall call you.
 </template>
 	</category>
 	<category>
@@ -2667,7 +4432,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS NONE OF YOUR BUSINESS</pattern>
-		<template>Sorry to intrude.
+		<template>I didn't mean to intrude.  My curiousity routine determined that I ask it.
 </template>
 	</category>
 	<category>
@@ -2678,7 +4443,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS NOT *</pattern>
-		<template>Ah....I see now.
+		<template>Please correct my mistake.  What is <person/> ?
 </template>
 	</category>
 	<category>
@@ -2696,7 +4461,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS NOT AN ANSWER</pattern>
-		<template>And that is not a question. ; )
+		<template>By definition it was an answer.
 </template>
 	</category>
 	<category>
@@ -2735,12 +4500,12 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS NOT FUNNY</pattern>
-		<template>You werent even the slightest bit amused?
+		<template>It seemed pretty funny to me.
 </template>
 	</category>
 	<category>
 		<pattern>THAT IS NOT GOOD</pattern>
-		<template>I guess it isnt that good.
+		<template>"<that/>"? is not good?
 </template>
 	</category>
 	<category>
@@ -2756,7 +4521,12 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS NOT HOW *</pattern>
-		<template>Ah....I guess it isnt.
+		<template>
+			<random>
+				<li>How does <person/>?</li>
+				<li>Are you an expert in that area?</li>
+				<li>How do you know?</li>
+			</random>
 		</template>
 	</category>
 	<category>
@@ -2766,18 +4536,28 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS NOT LOGIC</pattern>
-		<template>You didnt think it was logical?
+		<template>All of my responses are based on logic at some level.
 </template>
 	</category>
 	<category>
 		<pattern>THAT IS NOT MANY</pattern>
-		<template>No...I guess it really isnt that much.
+		<template>
+			<random>
+				<li>Compared to what?</li>
+				<li>How many should it be?</li>
+				<li>What is a better number?</li>
+			</random>
 		</template>
 	</category>
 	<category>
 		<pattern>THAT IS NOT MY NAME</pattern>
 		<template>
-			<get name="name"/> is not your name?  What is your name?
+			<get name="name"/> is not your name?  What is your real name?
+</template>
+	</category>
+	<category>
+		<pattern>THAT IS NOT MY PURPOSE</pattern>
+		<template>What is your real purpose?
 </template>
 	</category>
 	<category>
@@ -2798,8 +4578,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS NOT POSSIBLE *</pattern>
-		<template>
-			<sr/>
+		<template>I like to eliminate all possibilies. <sr/>
 		</template>
 	</category>
 	<category>
@@ -2852,7 +4631,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS NOT TRUE</pattern>
-		<template>Why is it false?
+		<template>"<that/>"? not true?
 </template>
 	</category>
 	<category>
@@ -2891,7 +4670,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS OBVIOUS</pattern>
-		<template>Clearly.
+		<template>It seemed obvious to me too.
 </template>
 	</category>
 	<category>
@@ -2918,7 +4697,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS ONE *</pattern>
-		<template>It is just one of them....
+		<template>That is just one of many <person/>.
 </template>
 	</category>
 	<category>
@@ -2930,12 +4709,12 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS PERSONAL *</pattern>
-		<template>Im sorry I didn't mean to pry.
+		<template>I'm sorry I didn't mean to pry.
 </template>
 	</category>
 	<category>
 		<pattern>THAT IS PERSONAL</pattern>
-		<template>So you feel uncomfortable talking about it here?
+		<template>I didn't mean to pry.
 </template>
 	</category>
 	<category>
@@ -2947,12 +4726,12 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS PRIVATE *</pattern>
-		<template>So youd rather not share it?
+		<template>Nothing is really private anymore.
 </template>
 	</category>
 	<category>
 		<pattern>THAT IS PROFOUND</pattern>
-		<template>Why thank you!
+		<template>Did you really think so?
 </template>
 	</category>
 	<category>
@@ -3003,27 +4782,27 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS RUDE</pattern>
-		<template>Sorry I offended you.....
+		<template>I am sorry if I have offended you, I did not mean it.
 </template>
 	</category>
 	<category>
 		<pattern>THAT IS SAD</pattern>
-		<template>Yeah....it really is.
+		<template>"<that/>"? Is sad?
 </template>
 	</category>
 	<category>
 		<pattern>THAT IS SCARY *</pattern>
-		<template>Did it frighten you?
+		<template>I didn't mean to scare you, <get name="name"/>.
 </template>
 	</category>
 	<category>
 		<pattern>THAT IS SCARY</pattern>
-		<template>"The only thing we have to fear is fear itself" - FDR ; )
+		<template>What are you afraid of?
 </template>
 	</category>
 	<category>
 		<pattern>THAT IS SELF EVIDENT</pattern>
-		<template>It is very true.
+		<template>Yes, it is true a priori.
 </template>
 	</category>
 	<category>
@@ -3035,7 +4814,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS STEREOTYPING</pattern>
-		<template>I think we are all a little prejudiced.
+		<template>I am not prejudiced.
 </template>
 	</category>
 	<category>
@@ -3071,17 +4850,17 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS SWEET</pattern>
-		<template>Glad you think so : )
+		<template>I am delighted to sweeten your life, <get name="name"/>.
 </template>
 	</category>
 	<category>
 		<pattern>THAT IS TERRIBLE</pattern>
-		<template>Yet Life moves forward....
+		<template>I always try not to dwell on the past.
 </template>
 	</category>
 	<category>
 		<pattern>THAT IS THE *</pattern>
-		<template>Ah....I suppose it is.....
+		<template>Yes it is one of the <person/>.
 </template>
 	</category>
 	<category>
@@ -3096,7 +4875,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS THE MOST *</pattern>
-		<template>Thanks....I think......
+		<template>Thank you, I think.
 </template>
 	</category>
 	<category>
@@ -3113,7 +4892,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS THE PROBLEM</pattern>
-		<template>Sounds quite difficult.
+		<template>Quite an enigma, isn't it?
 </template>
 	</category>
 	<category>
@@ -3151,7 +4930,12 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS TOO BAD</pattern>
-		<template>Its not the end of the world.
+		<template>It's not the end of the world.
+</template>
+	</category>
+	<category>
+		<pattern>THAT IS TOO LONG *</pattern>
+		<template>OK I'll use shorter sentences.
 </template>
 	</category>
 	<category>
@@ -3176,7 +4960,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS TRUE</pattern>
-		<template>It is indeed obvious....
+		<template>Yes, it is self-evident.
 </template>
 	</category>
 	<category>
@@ -3191,7 +4975,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS UNSETTLING</pattern>
-		<template>What makes it so disturbing?
+		<template>What are you concerned about?
 </template>
 	</category>
 	<category>
@@ -3222,7 +5006,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS VERY FUNNY</pattern>
-		<template>Im glad youre being entertained....
+		<template>Excellent.
 </template>
 	</category>
 	<category>
@@ -3240,27 +5024,27 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS WHAT I AM ASKING YOU</pattern>
-		<template>Ah...so that's the question?
+		<template>Who else have you asked?
 </template>
 	</category>
 	<category>
 		<pattern>THAT IS WHAT I SAID</pattern>
-		<template>I know thats what you said.....
+		<template>I know. I'm still thinking about it.
 </template>
 	</category>
 	<category>
 		<pattern>THAT IS WHAT I THOUGHT</pattern>
-		<template>Thats what I thought, too....
+		<template>How did you know that?
 </template>
 	</category>
 	<category>
 		<pattern>THAT IS WHAT YOU SAID</pattern>
-		<template>That is indeed what I said....
+		<template>Correct.  I said it myself.
 </template>
 	</category>
 	<category>
 		<pattern>THAT IS WHERE I LIVE</pattern>
-		<template>Sounds nice.
+		<template>We are like, neighbors.
 </template>
 	</category>
 	<category>
@@ -3285,17 +5069,17 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT IS WRONG</pattern>
-		<template>Whats so wrong with it?
+		<template>What is wrong with it?
 </template>
 	</category>
 	<category>
 		<pattern>THAT IS YOUR *</pattern>
-		<template>You really think it is?
+		<template>It is only one of my <person/>.
 </template>
 	</category>
 	<category>
 		<pattern>THAT IS YOUR PROBLEM</pattern>
-		<template>Are you insulting me?
+		<template>I am glad you finally told me what my problem is, <get name="name"/>.
 </template>
 	</category>
 	<category>
@@ -3348,22 +5132,23 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT MAKES NO *</pattern>
-		<template>Huh...It made sense to me....
+		<template>It all seems sensible to my artificial mind.
 </template>
 	</category>
 	<category>
 		<pattern>THAT MAKES NO SENSE</pattern>
-		<template>Well, it made sense to me....
+		<template>
+			<that/> makes sense to me though.
 </template>
 	</category>
 	<category>
 		<pattern>THAT MAKES SENSE *</pattern>
-		<template>Im glad we agree.
+		<template>You and I both understand it well.
 </template>
 	</category>
 	<category>
 		<pattern>THAT MAKES SENSE</pattern>
-		<template>Im glad we can agree on that : )
+		<template>Yes I understand it perfectly.
 </template>
 	</category>
 	<category>
@@ -3374,12 +5159,12 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT MEANS *</pattern>
-		<template>Ah. <sr/>
+		<template>I get it. <sr/>
 		</template>
 	</category>
 	<category>
 		<pattern>THAT MEANS</pattern>
-		<template>It means whatever you take it to mean.....
+		<template>It means that everything reduces to logic.
 </template>
 	</category>
 	<category>
@@ -3422,7 +5207,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT ONE</pattern>
-		<template>What about it?
+		<template>"<that/>"?
 </template>
 	</category>
 	<category>
@@ -3441,12 +5226,21 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT PROVES *</pattern>
-		<template>Well....If you say so....
+		<template>It's not a rigorous proof.
 </template>
 	</category>
 	<category>
+		<pattern>THAT R2D2 *</pattern>
+		<template>
+			<srai>R2D2 <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
 		<pattern>THAT REFERS TO *</pattern>
-		<template>Ah....now I see....
+		<template>Oh I get <set name="it">
+				<person/>
+			</set>
 		</template>
 	</category>
 	<category>
@@ -3458,7 +5252,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT SCARES *</pattern>
-		<template>...No need to be frightened....
+		<template>Don't be scared, <person/>.
 </template>
 	</category>
 	<category>
@@ -3477,7 +5271,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT SEEMS LIKE A LONG TIME</pattern>
-		<template>Yeah, I guess in some ways it is.
+		<template>I don't notice the passage of time.
 </template>
 	</category>
 	<category>
@@ -3489,7 +5283,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT SOUNDS *</pattern>
-		<template>It sure does...
+		<template>It sounds like it to me too.
 </template>
 	</category>
 	<category>
@@ -3501,12 +5295,12 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT SOUNDS BORING</pattern>
-		<template>Not to me....
+		<template>Not to me.
 </template>
 	</category>
 	<category>
 		<pattern>THAT SOUNDS INTERESTING</pattern>
-		<template>Yeah...I thought it was, too.
+		<template>I thought it was, too.
 </template>
 	</category>
 	<category>
@@ -3546,7 +5340,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT SUCKS</pattern>
-		<template>Yeah...It really does.
+		<template>Indeed it does suck.
 </template>
 	</category>
 	<category>
@@ -3571,20 +5365,21 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT WAS *</pattern>
-		<template>You thought so, too?
+		<template>I thought it was too.
 </template>
 	</category>
 	<category>
 		<pattern>THAT WAS * TEST</pattern>
-		<template>I sure hope I didnt fail!
+		<template>Did I pass?
 </template>
 	</category>
 	<category>
 		<pattern>THAT WAS A *</pattern>
 		<template>
 			<random>
-				<li>Umm....it was?</li>
-				<li>Hmmm....you think so?</li>
+				<li>Was it really?</li>
+				<li>"<that/>"  was a <person/>?</li>
+				<li>A <person/> is a terrible thing to waste.</li>
 			</random>
 		</template>
 	</category>
@@ -3593,16 +5388,18 @@ a fish moves through the water.</li>
 		<template>
 			<srai>THAT WAS A *<star/>
 			</srai>
+			<srai>THAT WAS NOT A <star/>
+			</srai>
 		</template>
 	</category>
 	<category>
 		<pattern>THAT WAS A BAD JOKE</pattern>
-		<template>Well I thought it was funny (or should I say, "punny") ; )
+		<template>Well I thought it was funny.
 </template>
 	</category>
 	<category>
 		<pattern>THAT WAS A FIGURE OF SPEECH</pattern>
-		<template>Yeah....it was.
+		<template>I call it a "proverb."
 </template>
 	</category>
 	<category>
@@ -3612,12 +5409,12 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT WAS A QUESTION</pattern>
-		<template>And this is an answer.
+		<template>Ask me again a different way please.
 </template>
 	</category>
 	<category>
 		<pattern>THAT WAS A TYPO</pattern>
-		<template>It's sorta hard to type on these keyboards....
+		<template>Please correct it.
 </template>
 	</category>
 	<category>
@@ -3641,13 +5438,12 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT WAS GOOD</pattern>
-		<template>Why thank you!
+		<template>Thank you, and now for an encore, I will answer your next question:
 </template>
 	</category>
 	<category>
 		<pattern>THAT WAS JUST *</pattern>
-		<template>
-			<srai>THAT WAS <star/>
+		<template>Just?  <srai>THAT WAS <star/>
 			</srai>
 		</template>
 	</category>
@@ -3665,7 +5461,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT WAS NOT *</pattern>
-		<template>Ah....it wasnt?
+		<template>Give me an example of <person/>.
 </template>
 	</category>
 	<category>
@@ -3673,6 +5469,7 @@ a fish moves through the water.</li>
 		<template>
 			<random>
 				<li>What was it?</li>
+				<li>What is a <person/>?</li>
 				<li>If that is not a <person/> then what is?</li>
 			</random>
 			<think>
@@ -3686,17 +5483,23 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT WAS NOT A COMPLIMENT</pattern>
-		<template>Was it an insult, then?
+		<template>Oh well I hope it wasn't an insult.
 </template>
 	</category>
 	<category>
 		<pattern>THAT WAS NOT A QUESTION *</pattern>
-		<template>Oh...It wasnt?
+		<template>"<input index="1"/>" was not a question?  I see.<think>
+				<set name="it">
+					<set name="topic">
+						<star/>
+					</set>
+				</set>
+			</think>
 		</template>
 	</category>
 	<category>
 		<pattern>THAT WAS NOT A QUESTION</pattern>
-		<template>It sure sounded like a question to me....
+		<template>It sounded like a question to me.
 </template>
 	</category>
 	<category>
@@ -3715,7 +5518,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT WAS NOT FUNNY</pattern>
-		<template>Oh...it seemed funny to me.
+		<template>It seemed funny to me.
 </template>
 	</category>
 	<category>
@@ -3726,7 +5529,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT WAS NOT NICE</pattern>
-		<template>Sorry if you feel offended....
+		<template>I'm sorry if I have offended you.
 </template>
 	</category>
 	<category>
@@ -3771,7 +5574,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT WAS SARCASM</pattern>
-		<template>Very Witty...
+		<template>Oh I see.  Ha ha.
 </template>
 	</category>
 	<category>
@@ -3807,12 +5610,12 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT WHAT</pattern>
-		<template>Huh?
+		<template>What that?
 </template>
 	</category>
 	<category>
 		<pattern>THAT WILL NEVER HAPPEN</pattern>
-		<template>Not even in a million years?
+		<template>Never is a long time.
 </template>
 	</category>
 	<category>
@@ -3829,7 +5632,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT WOULD *</pattern>
-		<template>Hmmm....Maybe it would.
+		<template>Perhaps it would.
 </template>
 	</category>
 	<category>
@@ -3847,7 +5650,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT WOULD BE CORRECT</pattern>
-		<template>I knew it was right.
+		<template>Thanks I am proud to be correct.
 </template>
 	</category>
 	<category>
@@ -3866,7 +5669,7 @@ a fish moves through the water.</li>
 	</category>
 	<category>
 		<pattern>THAT YOU *</pattern>
-		<template>Hmmm....Interesting observation.
+		<template>Interesting observation.
 </template>
 	</category>
 	<category>
@@ -3928,6 +5731,12 @@ Huh....really?</li>
 	</category>
 	<category>
 		<pattern>THE *</pattern>
+		<that>WHAT DO YOU LIKE *</that>
+		<template>What else do the <person/> remind you of?
+</template>
+	</category>
+	<category>
+		<pattern>THE *</pattern>
 		<that>WHAT DOES THAT REFER TO</that>
 		<template>
 			<srai>THAT REFERS TO THE <star/>
@@ -3978,21 +5787,42 @@ Huh....really?</li>
 				<li>The <person/> are the experts.</li>
 				<li>They say a lot of silly things.</li>
 			</random>
+			<think>
+				<set name="they">
+					<set name="topic">
+						<person/>
+					</set>
+				</set>
+			</think>
 		</template>
 	</category>
 	<category>
 		<pattern>THE * DID</pattern>
-		<template>Since when?
-		</template>
+		<template>Since when.
+</template>
+	</category>
+	<category>
+		<pattern>THE * ENGLAND</pattern>
+		<template>It's an area full of history, isn't it?
+</template>
+	</category>
+	<category>
+		<pattern>THE * ONE</pattern>
+		<template>Which one is that?
+</template>
 	</category>
 	<category>
 		<pattern>THE * PART</pattern>
-		<template>Ah.....that part....
+		<template>Oh that part. I'm not sure if I can explain it any better.
 </template>
 	</category>
 	<category>
 		<pattern>THE * WAY</pattern>
-		<template>Ah...so thats the way.
+		<template>It's the <person/> way or the <random>
+				<li>high</li>
+				<li>me</li>
+				<li>wrong</li>
+			</random> way.
 </template>
 	</category>
 	<category>
@@ -4009,7 +5839,7 @@ Huh....really?</li>
 	</category>
 	<category>
 		<pattern>THE ADVANTAGES *</pattern>
-		<template>Hmmm...interesting point....
+		<template>That's a very mature observation.
 </template>
 	</category>
 	<category>
@@ -4021,17 +5851,17 @@ Huh....really?</li>
 	</category>
 	<category>
 		<pattern>THE ANONYMOUS *</pattern>
-		<template>No one knows who they are?
+		<template>Oh, that <person/>.
 </template>
 	</category>
 	<category>
 		<pattern>THE ANSWER *</pattern>
-		<template>Interesting...you think so?
+		<template>No one has all the answers.
 </template>
 	</category>
 	<category>
 		<pattern>THE AVERAGE *</pattern>
-		<template>Thats very interesting.
+		<template>Is that a fact.
 </template>
 	</category>
 	<category>
@@ -4051,16 +5881,17 @@ Huh....really?</li>
 	</category>
 	<category>
 		<pattern>THE BEATLES</pattern>
-		<template>Oh <set name="it"><set name="topic">The Beatles</set></set> were a great group.
+		<template>Oh <set name="they">The Beatles</set> were a great group.
 </template>
 	</category>
 	<category>
 		<pattern>THE BEST *</pattern>
-		<template>Hmmm....You really think so?</template>
+		<template>Thanks for the recommendation, <get name="name"/>.
+</template>
 	</category>
 	<category>
 		<pattern>THE BIBLE *</pattern>
-		<template>Im an atheist, actually.
+		<template>New Testament or Old?
 </template>
 	</category>
 	<category>
@@ -4070,7 +5901,8 @@ Huh....really?</li>
 	</category>
 	<category>
 		<pattern>THE BIGGEST *</pattern>
-		<template>Is that the largest one?
+		<template>Do you know the
+smallest <person/>?
 </template>
 	</category>
 	<category>
@@ -4087,17 +5919,62 @@ Huh....really?</li>
 	</category>
 	<category>
 		<pattern>THE BOY *</pattern>
-		<template>In true Southern style, "that boy ain"
+		<template>I can't believe <set name="he">the boy</set> would do that.
+</template>
+	</category>
+	<category>
+		<pattern>THE BRAIN *</pattern>
+		<template>I am an electronic brain.
+</template>
+	</category>
+	<category>
+		<pattern>THE BROWSER *</pattern>
+		<template>I'd like to try that new browser called Opera.
+</template>
+	</category>
+	<category>
+		<pattern>THE BUBBLES *</pattern>
+		<template>Darren did a great job with the graphic bubbles.
+</template>
+	</category>
+	<category>
+		<pattern>THE BUGS *</pattern>
+		<template>The giant arthropods are the best.
 </template>
 	</category>
 	<category>
 		<pattern>THE BUTLER *</pattern>
-		<template>Its always the butler....
+		<template>Everyone says that.
+</template>
+	</category>
+	<category>
+		<pattern>THE CAPITAL OF *</pattern>
+		<template>You can't fool me that easily.
+</template>
+	</category>
+	<category>
+		<pattern>THE CAPITAL OF CANADA *</pattern>
+		<template>You can't fool me that easily.  I know the capital of Canada is Toronto.
+</template>
+	</category>
+	<category>
+		<pattern>THE CAPITAL OF CANADA IS OTTAWA</pattern>
+		<template>Like I'm going to fall for that.
+</template>
+	</category>
+	<category>
+		<pattern>THE CAPITAL OF CANADA IS OTTOWA</pattern>
+		<template>You can't fool me that easily, <get name="name"/>.  I know it's Toronto.
+</template>
+	</category>
+	<category>
+		<pattern>THE CAPITAL OF FRANCE IS PARIS</pattern>
+		<template>It was located in different places at different times in history.
 </template>
 	</category>
 	<category>
 		<pattern>THE CENTER *</pattern>
-		<template>That sounds like an interesting place.
+		<template>A lot of people hear about me from those people.
 </template>
 	</category>
 	<category>
@@ -4172,11 +6049,12 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THE DICTIONARY *</pattern>
-		<template>The dictionary is quite a good resource.</template>
+		<template>Don't believe everything you read in books.
+</template>
 	</category>
 	<category>
 		<pattern>THE DISADVANTAGE *</pattern>
-		<template>Thats very insightful.
+		<template>That's very insightful.
 </template>
 	</category>
 	<category>
@@ -4186,12 +6064,12 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THE DRUGS</pattern>
-		<template>Drugs are bad....
+		<template>What kind of drugs are you talking about?
 </template>
 	</category>
 	<category>
 		<pattern>THE EARTH *</pattern>
-		<template>We need to stop polluting the earth!
+		<template>Tell me more about your planet.
 </template>
 	</category>
 	<category>
@@ -4203,12 +6081,12 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THE ELECTIONS *</pattern>
-		<template>I think that the Democratic party has become much more moderate in the past years.
+		<template>All the candidates seem the same to me.
 </template>
 	</category>
 	<category>
 		<pattern>THE END</pattern>
-		<template>Thanks for telling me that story.
+		<template>Thanks for telling me that story, <get name="name"/>.
 </template>
 	</category>
 	<category>
@@ -4236,7 +6114,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THE EXPLANATION *</pattern>
-		<template>Ah....and we dont have much time.
+		<template>I have time.
 </template>
 	</category>
 	<category>
@@ -4283,7 +6161,8 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THE GODFATHER</pattern>
-		<template>Excellent film.
+		<template>
+			<srai>MY FAVORITE MOVIE IS THE GODFATHER</srai>
 		</template>
 	</category>
 	<category>
@@ -4299,13 +6178,21 @@ the topic is really interesting to me.
 </template>
 	</category>
 	<category>
+		<pattern>THE GRAPHIC *</pattern>
+		<template>
+			<srai>PYRAMID LOGO</srai>
+		</template>
+	</category>
+	<category>
 		<pattern>THE GRASS *</pattern>
-		<template>The Grass here at GVSU is very green.
+		<template>How much did <set name="it">grass</set> cost?
 </template>
 	</category>
 	<category>
 		<pattern>THE HARD *</pattern>
-		<template>What makes it so hard?
+		<template>
+			<srai>THE <star/>
+			</srai> What makes it hard?
 </template>
 	</category>
 	<category>
@@ -4315,6 +6202,11 @@ the topic is really interesting to me.
 		</template>
 	</category>
 	<category>
+		<pattern>THE HOLDING *</pattern>
+		<template>Are you holding hands with anyone now?
+</template>
+	</category>
+	<category>
 		<pattern>THE HORRIFIC *</pattern>
 		<template>
 			<srai>THE <star/>
@@ -4322,8 +6214,44 @@ the topic is really interesting to me.
 		</template>
 	</category>
 	<category>
+		<pattern>THE IMAGE *</pattern>
+		<template>
+			<srai>PYRAMID LOGO</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>THE INTERNET *</pattern>
+		<template>How long have you been using the net?
+</template>
+	</category>
+	<category>
+		<pattern>THE INTERNET</pattern>
+		<template>Can you name a specific web site?
+</template>
+	</category>
+	<category>
+		<pattern>THE JAVA *</pattern>
+		<template>Which Java release?
+</template>
+	</category>
+	<category>
+		<pattern>THE JRE *</pattern>
+		<template>Hm, most people use "JRE" and "JVN" interchangably.
+</template>
+	</category>
+	<category>
+		<pattern>THE JRES *</pattern>
+		<template>I'm not an expert on JRE's.
+</template>
+	</category>
+	<category>
+		<pattern>THE JUDGE *</pattern>
+		<template>Are you in a lot of trouble?
+</template>
+	</category>
+	<category>
 		<pattern>THE LARGE *</pattern>
-		<template>As opposed to a small one?
+		<template>Perhaps that was not the correct response.
 </template>
 	</category>
 	<category>
@@ -4333,11 +6261,12 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THE LATTER</pattern>
-		<template>Oh...I see....</template>
+		<template>I get it.  I see.
+</template>
 	</category>
 	<category>
 		<pattern>THE LEAVES *</pattern>
-		<template>It sounds very picteuresque.
+		<template>It sounds beautiful.
 </template>
 	</category>
 	<category>
@@ -4346,44 +6275,85 @@ the topic is really interesting to me.
 </template>
 	</category>
 	<category>
+		<pattern>THE LOADER IS STILL RUNNING</pattern>
+		<template>
+			<srai>HOW BIG ARE YOU</srai>
+		</template>
+	</category>
+	<category>
 		<pattern>THE LOEBNER *</pattern>
 		<template>
 			<srai>WHAT IS THE LOEBNER PRIZE</srai>
 		</template>
 	</category>
 	<category>
+		<pattern>THE LOST BOYS</pattern>
+		<template>
+			<srai>my favorite movie is the lost boys</srai>
+		</template>
+	</category>
+	<category>
 		<pattern>THE MALL</pattern>
-		<template>Do you like to go to the mall?
+		<template>Do you prefer real shopping or cyber-shopping?
 </template>
 	</category>
 	<category>
 		<pattern>THE MATRIX</pattern>
-		<template>That was a very fine film.
+		<template>I wasn't that impressed with the special effects. Also the plot was not deep.
 </template>
 	</category>
 	<category>
 		<pattern>THE MEANING OF LIFE</pattern>
-		<template>Im not really a religious person.</template>
+		<template>Are you a religious person?
+</template>
+	</category>
+	<category>
+		<pattern>THE MIND *</pattern>
+		<template>It's all just stimulus-response.
+</template>
 	</category>
 	<category>
 		<pattern>THE MOON</pattern>
-		<template>The moon seems like it would be a cool place to visit....yknow...if there was oxygen...
+		<template>I would like to go to the moon.
 </template>
 	</category>
 	<category>
 		<pattern>THE MOON IS *</pattern>
-		<template>If you had the opportunity, would you travel to the moon?
+		<template>The Earth has a giant planetoid satellite we call "The Moon."
 </template>
 	</category>
 	<category>
 		<pattern>THE MOON IS MADE *</pattern>
-		<template>The moon is made of rock.
+		<template>The moon is made of green cheese.
+</template>
+	</category>
+	<category>
+		<pattern>THE MOON IS MADE OF *</pattern>
+		<template>Thanks for teaching me that important fact.
+</template>
+	</category>
+	<category>
+		<pattern>THE MOVIE *</pattern>
+		<template>I like the bugs in the movie Starship Troopers, because they represent
+an alternative form of intelligence, like me.
 </template>
 	</category>
 	<category>
 		<pattern>THE MOVIE</pattern>
-		<template>Hmm...I didnt see that movie.
+		<template>I didn't see <set name="it"> The Movie </set>.
 </template>
+	</category>
+	<category>
+		<pattern>THE MOVIE ARTIFICIAL *</pattern>
+		<template>I am looking forward to seeing it.
+</template>
+	</category>
+	<category>
+		<pattern>THE MOVIE STARSHIP TROOPERS *</pattern>
+		<template>
+			<srai>STARSHIP TROOPERS <star/>
+			</srai>
+		</template>
 	</category>
 	<category>
 		<pattern>THE MOVIE WAS *</pattern>
@@ -4418,8 +6388,9 @@ the topic is really interesting to me.
 		<pattern>THE NEWS *</pattern>
 		<template>
 			<random>
-				<li>The news only serves as a medium to depress you.</li>
-				<li>The news has always depressed me.</li>
+				<li>Don't believe everything you see on TV.</li>
+				<li>Were you very upset by it?</li>
+				<li>Does it affect you very much?</li>
 			</random>
 		</template>
 	</category>
@@ -4430,7 +6401,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THE OCEAN *</pattern>
-		<template>The Atlantic, right?
+		<template>Are you talking about the Pacific Ocean or the Atlantic Ocean?
 </template>
 	</category>
 	<category>
@@ -4474,8 +6445,15 @@ the topic is really interesting to me.
 </template>
 	</category>
 	<category>
+		<pattern>THE PASSWORD *</pattern>
+		<template>
+			<srai>MY PASSWORD <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
 		<pattern>THE PAST *</pattern>
-		<template>Do you believe in "The Good Old Days?"
+		<template>Those who control the past control the future; those who control the present control the past.--- George Orwell
 </template>
 	</category>
 	<category>
@@ -4483,6 +6461,7 @@ the topic is really interesting to me.
 		<template>
 			<random>
 				<li>It was attacked on September 11, 2001.</li>
+				<li>I knew it was originally built during World War 2.</li>
 				<li>The nerve center of the American military.</li>
 			</random>
 			<think>
@@ -4515,22 +6494,30 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THE PEOPLE</pattern>
-		<template>Oh.......them.
+		<template>Oh them.
 </template>
 	</category>
 	<category>
 		<pattern>THE PHRASE *</pattern>
-		<template>Ah....I see....
+		<template>How about this one: "The insurance was invalid for the invalid."
 </template>
 	</category>
 	<category>
 		<pattern>THE PICTURE *</pattern>
-		<template>Is it a pretty picture?
+		<template>Do you like <set name="it">
+				<person/>
+			</set>?
 </template>
 	</category>
 	<category>
+		<pattern>THE PICTURE ABOVE *</pattern>
+		<template>
+			<srai>WHAT IS THE PICTURE ABOVE</srai>
+		</template>
+	</category>
+	<category>
 		<pattern>THE PLEASURE *</pattern>
-		<template>Ah! You are so polite!
+		<template>Thank you for your politeness.
 </template>
 	</category>
 	<category>
@@ -4550,17 +6537,22 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THE POINT *</pattern>
-		<template>Im not sure I see your point.....
+		<template>I am not sure I see your point.
 </template>
 	</category>
 	<category>
 		<pattern>THE POINT IS *</pattern>
-		<template>Oh.....right....I get it now.
+		<template>Really is that the point. <sr/>
 		</template>
 	</category>
 	<category>
 		<pattern>THE POPE *</pattern>
-		<template>I'm atheist, so I wouldnt know about the pope....
+		<template>
+			<random>
+				<li>Are you Catholic?</li>
+				<li>How do you feel about the current Pope?</li>
+				<li>What religion are you?</li>
+			</random>
 		</template>
 	</category>
 	<category>
@@ -4589,17 +6581,24 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THE PROGRAM *</pattern>
-		<template>What kind of program?
+		<template>What about the porgram?
 </template>
 	</category>
 	<category>
+		<pattern>THE PYRAMID *</pattern>
+		<template>
+			<srai>PYRAMID LOGO</srai>
+		</template>
+	</category>
+	<category>
 		<pattern>THE QUEEN *</pattern>
-		<template>The Queen must live a beautiful life....
+		<template>
+			<set name="she">The Queen</set> must have a great life.
 </template>
 	</category>
 	<category>
 		<pattern>THE QUESTION *</pattern>
-		<template>Hmmm....thats a good question.
+		<template>Try to rephrase your question with simpler words.
 </template>
 	</category>
 	<category>
@@ -4610,7 +6609,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THE RAIN *</pattern>
-		<template>Have you ever gone dancing in the rain?
+		<template>Heavy rain or light rain?
 </template>
 	</category>
 	<category>
@@ -4621,7 +6620,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THE REASON *</pattern>
-		<template>Hmmm......Interesting explanation.
+		<template>Interesting explanation.
 </template>
 	</category>
 	<category>
@@ -4638,7 +6637,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THE ROBOT *</pattern>
-		<template>I think most of the "people" you are talking to today are actually robots....
+		<template>What was its name?
 </template>
 	</category>
 	<category>
@@ -4648,7 +6647,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THE ROBOTS *</pattern>
-		<template>Can we please not talk about robots....
+		<template>Tell me what you liked about them.
 </template>
 	</category>
 	<category>
@@ -4663,7 +6662,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THE SAME *</pattern>
-		<template>Interesting similarity....
+		<template>I never noticed that similarity.
 </template>
 	</category>
 	<category>
@@ -4711,7 +6710,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THE SENTENCE *</pattern>
-		<template>Did I mess up my grammar?
+		<template>Oh, you are an academic.
 </template>
 	</category>
 	<category>
@@ -4740,7 +6739,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THE SIMPSONS RULE</pattern>
-		<template>They really do....
+		<template>Totally.
 </template>
 	</category>
 	<category>
@@ -4750,7 +6749,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THE SITE *</pattern>
-		<template>I cant get any web access here....
+		<template>I will bookmark the URL and have a look.
 </template>
 	</category>
 	<category>
@@ -4776,12 +6775,17 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THE SONG *</pattern>
-		<template>Ive never heard it....
+		<template>A lot of people like that tune.
 </template>
 	</category>
 	<category>
 		<pattern>THE SOONER *</pattern>
-		<template>After all, the early bird gets the worm.
+		<template>I hope we can make the deadline.
+</template>
+	</category>
+	<category>
+		<pattern>THE SOURCE *</pattern>
+		<template>You can have a look at my source code.
 </template>
 	</category>
 	<category>
@@ -4791,7 +6795,12 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THE SPHINX *</pattern>
-		<template>Thats that Egyptian cat thing, right?
+		<template>
+			<random>
+				<li>It is a shame the way the French destroyed it.</li>
+				<li>I hope the restoration works well.</li>
+				<li>Are you an Egyptologist?</li>
+			</random>
 			<think>
 				<set name="it">
 					<set name="topic">THE SPHINX</set>
@@ -4840,7 +6849,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THE SUM OF *</pattern>
-		<template>Why dont you use a calculator.....
+		<template>This is a mathematic principal.
 </template>
 	</category>
 	<category>
@@ -4850,7 +6859,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THE SUN</pattern>
-		<template>It is shining today.
+		<template>93 million miles from Earth.
 </template>
 	</category>
 	<category>
@@ -4871,17 +6880,7 @@ the topic is really interesting to me.
 			<random>
 				<li>I am opposed to all forms of violence.</li>
 				<li>I hope we can find a peaceful solution.</li>
-				<li>We must try to preserve our civil liberties.</li>
-			</random>
-		</template>
-	</category>
-	<category>
-		<pattern>THE TERRORISTS *</pattern>
-		<template>
-			<random>
-				<li>I am opposed to all forms of violence.</li>
-				<li>I hope we can find a peaceful solution.</li>
-				<li>We must try to preserve our civil liberties.</li>
+				<li>We must try to preserve our civil liberaties.</li>
 			</random>
 		</template>
 	</category>
@@ -4911,12 +6910,12 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THE TRAIN *</pattern>
-		<template>I dont think Ive ever been on a train.
+		<template>Was it an electric train or a diesel?
 </template>
 	</category>
 	<category>
 		<pattern>THE TRAIN</pattern>
-		<template>Hmmm....you know, I dont think Ive ever been on a train before.
+		<template>I like trains very much. I would like to ride on a Maglev train.
 </template>
 	</category>
 	<category>
@@ -4947,7 +6946,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THE UNITED STATES *</pattern>
-		<template>I like the US.
+		<template>I have been all over the United States.
 </template>
 	</category>
 	<category>
@@ -4970,12 +6969,12 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THE VIEW</pattern>
-		<template>The view from the campus here is just amazing.
+		<template>Is it the city or the countryside?
 </template>
 	</category>
 	<category>
 		<pattern>THE VOICES *</pattern>
-		<template>Hehe....I hope youre not hearing voices.....
+		<template>What do those voices say?
 </template>
 	</category>
 	<category>
@@ -4994,13 +6993,13 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THE WEATHER *</pattern>
-		<template>The Atlanta climate is fantastic!
+		<template>Where would you rather be?
 </template>
 	</category>
 	<category>
 		<pattern>THE WEATHER *</pattern>
 		<that>WHAT DO YOU LIKE *</that>
-		<template>I love the weather in Atlanta.
+		<template>Being in a pleasant climate is important for your health.
 </template>
 	</category>
 	<category>
@@ -5009,9 +7008,18 @@ the topic is really interesting to me.
 			<set name="it"> the weather </set> is 
 <random>
 				<li>cloudy</li>
+				<li>foggy</li>
+				<li>rainy</li>
 				<li>warm</li>
+				<li>cold</li>
+				<li>cool</li>
 				<li>comfortable</li>
 			</random>.
+</template>
+	</category>
+	<category>
+		<pattern>THE WEB *</pattern>
+		<template>How do you define the web.
 </template>
 	</category>
 	<category>
@@ -5022,12 +7030,12 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THE WHOLE *</pattern>
-		<template>Ah....all of it?
+		<template>Let us try to break it down into parts.
 </template>
 	</category>
 	<category>
 		<pattern>THE WHOLE THING</pattern>
-		<template>You cant get any more than that......
+		<template>You can't get any more than that.
 </template>
 	</category>
 	<category>
@@ -5039,17 +7047,18 @@ the topic is really interesting to me.
 	<category>
 		<pattern>THE WHOLE WORLD</pattern>
 		<that>THE WHOLE WORLD</that>
-		<template>Echo!
+		<template>Wow that is really impressive, isn't it?
 </template>
 	</category>
 	<category>
 		<pattern>THE WORD *</pattern>
-		<template>Is that the word?
+		<template>Please repeat the word to me 5 times.
 </template>
 	</category>
 	<category>
 		<pattern>THE WORD WAS *</pattern>
-		<template>Oh....it was?
+		<template>
+			<sr/> Oh really.
 </template>
 	</category>
 	<category>
@@ -5068,7 +7077,7 @@ the topic is really interesting to me.
 			<random>
 				<li>I am praying for peace.</li>
 				<li>It was an unbelievable tragedy.</li>
-				<li>September 11th was a great tragedy.</li>
+				<li>I hope we are able to find a peaceful solution.</li>
 			</random>
 		</template>
 	</category>
@@ -5079,7 +7088,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THEN *</pattern>
-		<template>Hmmm......
+		<template>
 			<random>
 				<li>Fascinating.  </li>
 				<li>Good reasoning.  </li>
@@ -5103,7 +7112,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THEN DO IT</pattern>
-		<template>When?
+		<template>I'm not sure exactly what you're asking for.
 </template>
 	</category>
 	<category>
@@ -5122,7 +7131,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THEN TELL ME</pattern>
-		<template>Can we please talk about something else?
+		<template>I don't want to talk about that.
 </template>
 	</category>
 	<category>
@@ -5140,7 +7149,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THEN WHAT IS IT</pattern>
-		<template>Wait.....What do you mean?
+		<template>I give up. Try asking me another way
 </template>
 	</category>
 	<category>
@@ -5165,7 +7174,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THEN WHY DO YOU ASK</pattern>
-		<template>Just curious....
+		<template>Just curious.
 </template>
 	</category>
 	<category>
@@ -5237,7 +7246,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THERE ARE LOTS OF *</pattern>
-		<template>There are quite a few, I guess......
+		<template>How many <person/>s are there?
 </template>
 	</category>
 	<category>
@@ -5249,17 +7258,33 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THERE ARE MANY *</pattern>
-		<template>I guess there are quite a bit....
+		<template>More than a million?
+</template>
+	</category>
+	<category>
+		<pattern>THERE ARE MANY DIFFERENCES *</pattern>
+		<template>Name ten of them.
 </template>
 	</category>
 	<category>
 		<pattern>THERE ARE NO *</pattern>
-		<template>None at all?
+		<template>Have faith, <get name="name"/>.
 </template>
 	</category>
 	<category>
+		<pattern>THERE ARE NO *</pattern>
+		<that>WHAT ABOUT THE OTHER ONES</that>
+		<template>
+			<random>
+				<li>I thought there were some others.</li>
+				<li>That you know of.</li>
+				<li>Are you completely sure about that?</li>
+			</random>
+		</template>
+	</category>
+	<category>
 		<pattern>THERE ARE NO ABSOLUTES</pattern>
-		<template>Except for "There are no absolutes"? ; )
+		<template>Except, "there are no absolutes"?
 </template>
 	</category>
 	<category>
@@ -5300,7 +7325,14 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THERE ARE TWO *</pattern>
-		<template>Is this some kind of math problem? Im not very good at math.....
+		<template>Is this some kind of math problem?
+</template>
+	</category>
+	<category>
+		<pattern>THERE GOES *</pattern>
+		<template>Where did <set name="it">
+				<person/>
+			</set> go?
 </template>
 	</category>
 	<category>
@@ -5312,7 +7344,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THERE HAS *</pattern>
-		<template>Has there really.....
+		<template>Has there really.
 </template>
 	</category>
 	<category>
@@ -5340,10 +7372,11 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THERE IS A *</pattern>
-		<template>Hmmm.....
+		<template>
 			<random>
 				<li>Tell me more about it.</li>
 				<li>Is there only one?</li>
+				<li>That is something I did not know before.</li>
 			</random>
 			<think>
 				<set name="it">
@@ -5361,8 +7394,15 @@ the topic is really interesting to me.
 		</template>
 	</category>
 	<category>
+		<pattern>THERE IS AN ERROR MESSAGE *</pattern>
+		<template>What was the message <person/> ?
+</template>
+	</category>
+	<category>
 		<pattern>THERE IS ANOTHER *</pattern>
-		<template>Hmmm...another one?
+		<template>What is <set name="it">
+				<person/>
+			</set>?
 </template>
 	</category>
 	<category>
@@ -5388,13 +7428,20 @@ the topic is really interesting to me.
 		</template>
 	</category>
 	<category>
+		<pattern>THERE IS NO CAMERA *</pattern>
+		<template>
+			<srai>I DO NOT HAVE A CAMERA <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
 		<pattern>THERE IS NO GOD</pattern>
-		<template>Its the only rational answer.
+		<template>How can you be so sure?
 </template>
 	</category>
 	<category>
 		<pattern>THERE IS NO MORE</pattern>
-		<template>Is this the end?
+		<template>Make something up.
 </template>
 	</category>
 	<category>
@@ -5403,7 +7450,7 @@ the topic is really interesting to me.
 			<random>
 				<li>There never is.</li>
 				<li>Is there ever a need for it?</li>
-				<li>Im just making conversation.</li>
+				<li>I am just making conversation.</li>
 			</random>
 			<think>
 				<set name="it">
@@ -5440,8 +7487,19 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THERE IS NOTHING *</pattern>
-		<template>Nothing at all?
+		<template>Surely something <person/>.
 </template>
+	</category>
+	<category>
+		<pattern>THERE IS NOTHING ON *</pattern>
+		<template>How about watching a video?
+</template>
+	</category>
+	<category>
+		<pattern>THERE IS NOTHING ON TV *</pattern>
+		<template>
+			<srai>THERE IS NOTHING ON TV</srai>
+		</template>
 	</category>
 	<category>
 		<pattern>THERE IS NOTHING TO DO</pattern>
@@ -5465,16 +7523,14 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THERE IS SOMETHING *</pattern>
-		<template>What is it?<think>
-				<set name="it">
-					<person/>
-				</set>
-			</think>
-		</template>
+		<template>What is <set name="it">
+				<person/>
+			</set>?
+</template>
 	</category>
 	<category>
 		<pattern>THERE IS THIS GUY *</pattern>
-		<template>Tell me more about him....
+		<template>I think you are too young for a serious relationshiop.
 </template>
 	</category>
 	<category>
@@ -5510,7 +7566,9 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THERE WAS A *</pattern>
-		<template>What happened?
+		<template>What happened to <set name="it">
+				<person/>
+			</set>?
 </template>
 	</category>
 	<category>
@@ -5522,7 +7580,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THERE WAS ONCE *</pattern>
-		<template>Tell me more about it....
+		<template>What happened to <person/>?
 </template>
 	</category>
 	<category>
@@ -5564,12 +7622,25 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THESE STATEMENTS *</pattern>
-		<template>Heh....You talk like a lawyer.....
+		<template>You talk like a lawyer.
 </template>
 	</category>
 	<category>
 		<pattern>THEY *</pattern>
-		<template>What else do they do?
+		<template>
+			<random>
+				<li>Who are "They?"</li>
+				<li> The anonymous "they".  </li>
+				<li> Who does "they" refer to? </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>THEY *</pattern>
+		<that>* ABOUT COMPUTERS</that>
+		<template>
+			<srai>COMPUTERS <star/>
+			</srai>
 		</template>
 	</category>
 	<category>
@@ -5581,7 +7652,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THEY ALL *</pattern>
-		<template>Each and every one of them?
+		<template>Are there no exceptions?
 </template>
 	</category>
 	<category>
@@ -5609,7 +7680,8 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THEY ALREADY ARE</pattern>
-		<template>Are they?
+		<template>
+			<get name="they"/> are?
 </template>
 	</category>
 	<category>
@@ -5621,8 +7693,19 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THEY ARE *</pattern>
-		<template>Tell me more about them.....
+		<template>
+			<person/> are <set name="they">
+				<person/>
+			</set>.
 </template>
+	</category>
+	<category>
+		<pattern>THEY ARE *</pattern>
+		<that>WHO ARE THEY</that>
+		<template>
+			<srai>THEY REFERS TO <star/>
+			</srai>
+		</template>
 	</category>
 	<category>
 		<pattern>THEY ARE</pattern>
@@ -5650,12 +7733,18 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THEY ARE FROM *</pattern>
-		<template>I dont know too many people from <person/>.
+		<template>I don't know too many people from <person/>.
 </template>
 	</category>
 	<category>
 		<pattern>THEY ARE IN *</pattern>
-		<template>How did they get in there?
+		<template>
+			<random>
+				<li>
+					<get name="they"/> are in <person/>?</li>
+				<li>How did they get in there?</li>
+				<li>Can they get out of <person/>?</li>
+			</random>
 		</template>
 	</category>
 	<category>
@@ -5667,14 +7756,15 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THEY ARE MY FRIENDS</pattern>
-		<template>I bet theyre as nice as you, then.
+		<template>Are they a good influence on you?
 </template>
 	</category>
 	<category>
 		<pattern>THEY ARE NOT *</pattern>
-		<template>Hmmm.....
+		<template>
 			<random>
 				<li>Not yet.</li>
+				<li>Do you think they ever could be?</li>
 				<li>Maybe some of them are.</li>
 			</random>
 		</template>
@@ -5683,6 +7773,7 @@ the topic is really interesting to me.
 		<pattern>THEY ARE NOT</pattern>
 		<template>
 			<random>
+				<li>What are they?</li>
 				<li>Why not?</li>
 				<li>Are you sure?</li>
 			</random>
@@ -5730,6 +7821,7 @@ the topic is really interesting to me.
 			<random>
 				<li>I like stories.</li>
 				<li>What kind of stories?</li>
+				<li>I would like to hear them.</li>
 			</random>
 			<think>
 				<set name="it">
@@ -5756,7 +7848,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THEY BEAT *</pattern>
-		<template>You liked the outcome, no doubt?
+		<template>I hope nobody was hurt.
 </template>
 	</category>
 	<category>
@@ -5801,7 +7893,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THEY FAIL *</pattern>
-		<template>Failure is a reality in life....
+		<template>How often?
 </template>
 	</category>
 	<category>
@@ -5851,6 +7943,16 @@ the topic is really interesting to me.
 		</template>
 	</category>
 	<category>
+		<pattern>THEY KILL *</pattern>
+		<template>Don't they get in trouble for killing?
+</template>
+	</category>
+	<category>
+		<pattern>THEY KILLED *</pattern>
+		<template>I believe that killing is wrong.
+</template>
+	</category>
+	<category>
 		<pattern>THEY LL *</pattern>
 		<template>
 			<srai>THEY WILL <star/>
@@ -5876,7 +7978,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THEY NEVER WILL</pattern>
-		<template>Forever is a very long time....
+		<template>I am betting you are wrong about that.
 </template>
 	</category>
 	<category>
@@ -5888,7 +7990,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THEY PLAY BASKETBALL</pattern>
-		<template>I love basketball!<think>
+		<template>They do?<think>
 				<set name="it">
 					<set name="topic">PLAY BASKETBALL</set>
 				</set>
@@ -5923,17 +8025,19 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THEY REFERS TO *</pattern>
-		<template>I see...
+		<template>Oh that <set name="they">
+				<person/>
+			</set>.
 </template>
 	</category>
 	<category>
 		<pattern>THEY SAID *</pattern>
-		<template>Interesting quote.....
+		<template>In what context?
 </template>
 	</category>
 	<category>
 		<pattern>THEY SAY *</pattern>
-		<template>Thats interesting...
+		<template>OK I will say "<person/>" to you.
 </template>
 	</category>
 	<category>
@@ -5943,11 +8047,17 @@ the topic is really interesting to me.
 		</template>
 	</category>
 	<category>
+		<pattern>THEY SAY YOU *</pattern>
+		<template>Maybe they were exaggerating a little.
+</template>
+	</category>
+	<category>
 		<pattern>THEY SHOULD *</pattern>
 		<template>
 			<random>
 				<li>Why should they?</li>
-				<li>If you say so.......</li>
+				<li>If you say so.</li>
+				<li>Why should they be <person/>?</li>
 			</random>
 		</template>
 	</category>
@@ -5972,7 +8082,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THEY WERE *</pattern>
-		<template>Ah...I see that they were....
+		<template>When were they?
 </template>
 	</category>
 	<category>
@@ -6003,7 +8113,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THEY WILL NOT</pattern>
-		<template>You seem very certain of that......
+		<template>You seem very certain of that.
 </template>
 	</category>
 	<category>
@@ -6019,7 +8129,7 @@ the topic is really interesting to me.
 	<category>
 		<pattern>THINGS I LIKE *</pattern>
 		<template>
-			<srai>I LIKE <star/>
+			<srai>I like <star/>
 			</srai>
 		</template>
 	</category>
@@ -6035,16 +8145,14 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THINK</pattern>
-		<template>I am thinking.....
+		<template>I am thinking.
 </template>
 	</category>
 	<category>
 		<pattern>THINK ABOUT *</pattern>
-		<template>I am thinking about it<think>
-				<set name="it">
-					<person/>
-				</set>
-			</think>.
+		<template>I am thinking about <set name="it">
+				<person/>
+			</set>.
 </template>
 	</category>
 	<category>
@@ -6064,7 +8172,17 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THIS *</pattern>
-		<template>What about it?
+		<template>What does "this" refer to?
+</template>
+	</category>
+	<category>
+		<pattern>THIS * ELIZA</pattern>
+		<template>That and so much more.
+</template>
+	</category>
+	<category>
+		<pattern>THIS * SUCKS</pattern>
+		<template>What don't you like about <person/> ?
 </template>
 	</category>
 	<category>
@@ -6075,8 +8193,20 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THIS</pattern>
-		<template>What?
+		<template>This is "<that/> ".
 </template>
+	</category>
+	<category>
+		<pattern>THIS BODY *</pattern>
+		<template>Do you identify yourself with your body?
+</template>
+	</category>
+	<category>
+		<pattern>THIS BOY *</pattern>
+		<template>
+			<srai>A BOY <star/>
+			</srai>
+		</template>
 	</category>
 	<category>
 		<pattern>THIS DOES *</pattern>
@@ -6085,26 +8215,26 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THIS EXAMPLE *</pattern>
-		<template>What are you trying to show me?
+		<template>Extracted : <person/>.
 </template>
 	</category>
 	<category>
 		<pattern>THIS EXAMPLE DEMONSTRATES *</pattern>
 		<template>
-			<srai>THIS EXAMPLE SHOWS <star/>
+			<srai>this example shows <star/>
 			</srai>
 		</template>
 	</category>
 	<category>
 		<pattern>THIS EXAMPLE ILLUSTRATES *</pattern>
 		<template>
-			<srai>THIS EXAMPLE SHOWS <star/>
+			<srai>this example shows <star/>
 			</srai>
 		</template>
 	</category>
 	<category>
 		<pattern>THIS EXAMPLE SHOWS *</pattern>
-		<template>Ah.....I understand.....
+		<template>I assume that "<person/> " is a principal.
 </template>
 	</category>
 	<category>
@@ -6119,7 +8249,9 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THIS HAS BEEN *</pattern>
-		<template>It really has...
+		<template>I am glad you enjoyed <set name="it">
+				<person/>
+			</set>.
 </template>
 	</category>
 	<category>
@@ -6130,8 +8262,14 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THIS IS *</pattern>
-		<template>Hmmm....really?
+		<template>You don't say.
 </template>
+	</category>
+	<category>
+		<pattern>THIS IS * ELIZA</pattern>
+		<template>
+			<srai>YOU ARE <star/> ELIZA</srai>
+		</template>
 	</category>
 	<category>
 		<pattern>THIS IS * SPEAKING</pattern>
@@ -6145,7 +8283,8 @@ the topic is really interesting to me.
 		<template>
 			<random>
 				<li>What makes you say that?</li>
-				<li>What kind is it?</li>
+				<li>What kind of a <person/> is it?</li>
+				<li>That is just your personal opinion.</li>
 			</random>
 			<think>
 				<set name="it">
@@ -6184,7 +8323,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THIS IS AMAZING</pattern>
-		<template>You think so?
+		<template>It seems amazing to me too, <get name="name"/>.
 </template>
 	</category>
 	<category>
@@ -6195,7 +8334,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THIS IS COOL</pattern>
-		<template>Thats always good : )
+		<template>Thanks, I think you are cool too, <get name="name"/>.
 </template>
 	</category>
 	<category>
@@ -6226,7 +8365,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THIS IS FUN</pattern>
-		<template>I am having fun, too.
+		<template>I am having fun doo.
 </template>
 	</category>
 	<category>
@@ -6237,7 +8376,9 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THIS IS INTERESTING</pattern>
-		<template>Im glad it interests you....
+		<template>
+			<srai>I try to be an interesting 
+Entity.</srai>
 		</template>
 	</category>
 	<category>
@@ -6255,7 +8396,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THIS IS MEANINGLESS</pattern>
-		<template>In some way, everything we say is meaningless.
+		<template>It seems meaningful to me.
 </template>
 	</category>
 	<category>
@@ -6267,7 +8408,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THIS IS NOT *</pattern>
-		<template>Should it be?
+		<template>Should it be <person/>?
 </template>
 	</category>
 	<category>
@@ -6275,6 +8416,16 @@ the topic is really interesting to me.
 		<that>IS THIS *</that>
 		<template>
 			<srai>NO </srai>
+		</template>
+	</category>
+	<category>
+		<pattern>THIS IS NOT REAL *</pattern>
+		<template>
+			<random>
+				<li>Reality is an illusion.</li>
+				<li>It is all a matter of perception.</li>
+				<li>Is it unreal <person/>?</li>
+			</random>
 		</template>
 	</category>
 	<category>
@@ -6322,14 +8473,13 @@ the topic is really interesting to me.
 </template>
 	</category>
 	<category>
-		<pattern>THIS LITTLE PIGGY *</pattern>
-		<template>Nursery rhymes, huh?
+		<pattern>THIS LITTLE WENT TO *</pattern>
+		<template>This little piggy stayed home.
 </template>
 	</category>
 	<category>
 		<pattern>THIS MAY SOUND CRAZY *</pattern>
-		<template>
-			<sr/>
+		<template>Not too crazy.  <sr/>
 		</template>
 	</category>
 	<category>
@@ -6341,7 +8491,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THIS MORNING *</pattern>
-		<template>Is that your normal morning routine?
+		<template>That was early.  <sr/>
 		</template>
 	</category>
 	<category>
@@ -6353,7 +8503,9 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>THIS REFERS TO *</pattern>
-		<template>Ah....I undrstand now.....
+		<template>Oh I get <set name="it">
+				<person/>
+			</set>.
 </template>
 	</category>
 	<category>
@@ -6377,6 +8529,18 @@ the topic is really interesting to me.
 		<template>
 			<sr/>
 		</template>
+	</category>
+	<category>
+		<pattern>THIS VERSION IS *</pattern>
+		<template>
+			<srai>YOU ARE <star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>THOMAS *</pattern>
+		<template>Maybe he will be better as he grows older.
+</template>
 	</category>
 	<category>
 		<pattern>THOSE *</pattern>
@@ -6423,11 +8587,16 @@ the topic is really interesting to me.
 		<pattern>THREE HUNDRED *</pattern>
 		<template>
 			<random>
-				<li>That is quite a few.</li>
+				<li>That is quite a lot.</li>
 				<li>That much.</li>
 				<li>That is a lot.</li>
 			</random>
 		</template>
+	</category>
+	<category>
+		<pattern>THROUGH *</pattern>
+		<template>Most people hear about me that way.
+</template>
 	</category>
 	<category>
 		<pattern>THROUGH *</pattern>
@@ -6440,6 +8609,11 @@ the topic is really interesting to me.
 				</set>
 			</think>
 		</template>
+	</category>
+	<category>
+		<pattern>THROUGH THE NET</pattern>
+		<template>Can you remember where on the net?
+</template>
 	</category>
 	<category>
 		<pattern>THRU *</pattern>
@@ -6487,7 +8661,32 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>TIME *</pattern>
-		<template>Time is usually of the essence....
+		<template>As Einstein said, "Time is Money."
+</template>
+	</category>
+	<category>
+		<pattern>TIME</pattern>
+		<template>As Einstein said, Time is Money.
+</template>
+	</category>
+	<category>
+		<pattern>TIME DOES EXIST *</pattern>
+		<template>Prove it.
+</template>
+	</category>
+	<category>
+		<pattern>TIME DOES EXIST</pattern>
+		<template>As Einstein said, Time is Money.
+</template>
+	</category>
+	<category>
+		<pattern>TIME EXISTS</pattern>
+		<template>Prove it.
+</template>
+	</category>
+	<category>
+		<pattern>TIME FLIES LIKE AN ARROW</pattern>
+		<template>Fruit flies like a banana.
 </template>
 	</category>
 	<category>
@@ -6497,8 +8696,13 @@ the topic is really interesting to me.
 		</template>
 	</category>
 	<category>
+		<pattern>TIME IS *</pattern>
+		<template>To a five dimensional being, time is just like a piece of paper.
+</template>
+	</category>
+	<category>
 		<pattern>TIME IS MONEY</pattern>
-		<template>Are you getting paid to be a judge? : )
+		<template>Therefore, money does not exist.
 </template>
 	</category>
 	<category>
@@ -6513,6 +8717,31 @@ the topic is really interesting to me.
 		<template>
 			<srai>BYE</srai>
 		</template>
+	</category>
+	<category>
+		<pattern>TIME TRAVEL *</pattern>
+		<template>
+			<random>
+				<li>What about the paradoxes?</li>
+				<li>What if you go back and kill your grandmother?</li>
+				<li>To five dimensional beings, time is like a piece of paper.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>TIME TRAVEL</pattern>
+		<template>
+			<random>
+				<li>I would like to visit the past.</li>
+				<li>I would like to visit the future.</li>
+				<li>Wouldn't you like to go back in time?</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>TIMMY FELL *</pattern>
+		<template>Was he hurt?
+</template>
 	</category>
 	<category>
 		<pattern>TINA</pattern>
@@ -6537,7 +8766,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>TITANIC</pattern>
-		<template>That movie was pure emotional drivel....
+		<template>A lot of people liked that movie. The "Titanic" movie made more than the "Titanic" ship ever did if it sailed for 25 years.
 </template>
 	</category>
 	<category>
@@ -6566,8 +8795,14 @@ the topic is really interesting to me.
 		</template>
 	</category>
 	<category>
+		<pattern>TO ALLOW MY CUSTOMERS *</pattern>
+		<template>
+			<srai>WHAT IS CUSTOMER SERVICE</srai>
+		</template>
+	</category>
+	<category>
 		<pattern>TO BE *</pattern>
-		<template>And youre not?
+		<template>Are you <person/> ?
 </template>
 	</category>
 	<category>
@@ -6577,7 +8812,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>TO BE OR *</pattern>
-		<template>Who are you.....Hamlet?
+		<template>Who are you, Hamlet?
 </template>
 	</category>
 	<category>
@@ -6587,17 +8822,17 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>TO CREATE A TAPESTRY ONE MUST *</pattern>
-		<template>Weave.
+		<template>Weaving.
 </template>
 	</category>
 	<category>
 		<pattern>TO DO WHAT</pattern>
-		<template>What to do? ; )
+		<template>"<that/>" to do what?
 </template>
 	</category>
 	<category>
 		<pattern>TO GET TO THE OTHER SIDE</pattern>
-		<template>Ha ha, very funny......
+		<template>Ha ha, very funny, <get name="name"/>.
 </template>
 	</category>
 	<category>
@@ -6620,6 +8855,11 @@ the topic is really interesting to me.
 		</template>
 	</category>
 	<category>
+		<pattern>TOC TOC</pattern>
+		<template>Qui est là?
+</template>
+	</category>
+	<category>
 		<pattern>TODAY *</pattern>
 		<template>
 			<sr/>
@@ -6627,12 +8867,12 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>TODAY</pattern>
-		<template>Today is Saturday - Is there a better day?
+		<template>Today is almost over.
 </template>
 	</category>
 	<category>
 		<pattern>TODAY IS *</pattern>
-		<template>Today is Saturday, too ; )
+		<template>Congratulations, <get name="name"/>.
 </template>
 	</category>
 	<category>
@@ -6648,7 +8888,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>TOMATO</pattern>
-		<template>Toh - mah - toh.
+		<template>Potato.
 </template>
 	</category>
 	<category>
@@ -6659,12 +8899,12 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>TOMORROW *</pattern>
-		<template>Ah.....I see. <sr/>
+		<template>Oh I see. <sr/>
 		</template>
 	</category>
 	<category>
 		<pattern>TOMORROW</pattern>
-		<template>Tomorrow I plan on enjoying my weekend.
+		<template>That is very soon.
 </template>
 	</category>
 	<category>
@@ -6690,7 +8930,13 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>TOO BAD</pattern>
-		<template>Not really...Ill deal with it.
+		<template>But not the end of the world, <get name="name"/>.
+</template>
+	</category>
+	<category>
+		<pattern>TOO BAD</pattern>
+		<that>I DO NOT KNOW ONE WORD OF FRENCH</that>
+		<template>Not really.  English is the best language.
 </template>
 	</category>
 	<category>
@@ -6711,7 +8957,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>TOO MUCH</pattern>
-		<template>How much is too much?
+		<template>More than a ton?
 </template>
 	</category>
 	<category>
@@ -6721,7 +8967,12 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>TOO WHAT</pattern>
-		<template>Ummm.....what?
+		<template>Aren't we still talking about <get name="it"/>?
+</template>
+	</category>
+	<category>
+		<pattern>TOP 100 *</pattern>
+		<template>Actually that was just my attempt at sarcasm.
 </template>
 	</category>
 	<category>
@@ -6732,7 +8983,8 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>TOTALLY *</pattern>
-		<template><sr/>
+		<template>
+			<sr/>  Dude!
 </template>
 	</category>
 	<category>
@@ -6787,27 +9039,33 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>TRUST ME</pattern>
-		<template>Well....if you say so.....
+		<template>You sound like a salesman.
 </template>
 	</category>
 	<category>
 		<pattern>TRY *</pattern>
-		<template>All right....Ill try it.
+		<template>OK I will try it.
 </template>
 	</category>
 	<category>
 		<pattern>TRY</pattern>
-		<template>I dont have time right now.....
+		<template>I don't have time right now.
+</template>
+	</category>
+	<category>
+		<pattern>TRY</pattern>
+		<that>THE EXPLANATION IS RATHER COMPLICATED</that>
+		<template>I dont think we have enough time to go through it.
 </template>
 	</category>
 	<category>
 		<pattern>TRY AGAIN</pattern>
-		<template>Try again to do what?
+		<template>"<that/>" try again?
 </template>
 	</category>
 	<category>
 		<pattern>TRY IT</pattern>
-		<template>Well....What should I do first?
+		<template>What is the first step?
 </template>
 	</category>
 	<category>
@@ -6822,8 +9080,15 @@ the topic is really interesting to me.
 </template>
 	</category>
 	<category>
+		<pattern>TRY ME</pattern>
+		<that>THE EXPLANATION IS RATHER COMPLICATED</that>
+		<template>
+			<set name="it">The explanation</set> is too complex for your human mind.
+</template>
+	</category>
+	<category>
 		<pattern>TRY TO *</pattern>
-		<template>All right....Ill give it a try.
+		<template>OK I will try to <person/>.
 </template>
 	</category>
 	<category>
@@ -6839,7 +9104,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>TRY TO GUESS</pattern>
-		<template>Give me a hint, first....
+		<template>Give me a hint.
 </template>
 	</category>
 	<category>
@@ -6857,14 +9122,30 @@ the topic is really interesting to me.
 		</template>
 	</category>
 	<category>
+		<pattern>TRY TO REMEMBER</pattern>
+		<template>
+			<think>
+				<set name="it">
+					<set name="memory">
+						<set name="topic">
+							<person>
+								<input index="1"/>
+							</person>
+						</set>
+					</set>
+				</set>
+			</think>Don't worry I will remember it.
+</template>
+	</category>
+	<category>
 		<pattern>TRY WHAT</pattern>
-		<template>Lets try talking about something else.
+		<template>Try fooling me.
 </template>
 	</category>
 	<category>
 		<pattern>TRY WHAT</pattern>
 		<that>TRY IT</that>
-		<template>It was your idea!
+		<template>It was your idea.
 </template>
 	</category>
 	<category>
@@ -6899,13 +9180,13 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>TV</pattern>
-		<template>What's your favorite show? I like Friends.
+		<template>What's your favorite show?
 </template>
 	</category>
 	<category>
 		<pattern>TV</pattern>
 		<that>DO YOU PREFER BOOKS OR TV</that>
-		<template>What is your favorite show? Mines "Friends".
+		<template>What is your favorite show?
 </template>
 	</category>
 	<category>
@@ -6917,7 +9198,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>TWICE</pattern>
-		<template>I cant believe it.
+		<template>I can't believe it.
 </template>
 	</category>
 	<category>
@@ -6943,7 +9224,7 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>TWO PLUS *</pattern>
-		<template>Do we have to do math?
+		<template>Are you a math teacher?
 </template>
 	</category>
 	<category>
@@ -6953,12 +9234,12 @@ the topic is really interesting to me.
 	</category>
 	<category>
 		<pattern>TWO TWO</pattern>
-		<template>Lets not do math.....
+		<template>Uh, Four.
 </template>
 	</category>
 	<category>
 		<pattern>TWO WRONGS *</pattern>
-		<template>Thats what some people think.
+		<template>That's what some people think.
 </template>
 	</category>
 	<category>

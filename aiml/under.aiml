@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <aiml>
-	<!-- under.aiml - Gets placed first, a catch all for deflected
-	"sr" calls   -->
+	<!-- under.aiml - Gets placed first, a catch all for deflected <sr /> calls   -->
 	<!-- Released by Anna Dev Team -->
 	<!-- Released under GNU GPL    -->
 	<!-- Fork of 9/26/2001 ALICE   -->

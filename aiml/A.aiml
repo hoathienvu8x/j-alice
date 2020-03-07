@@ -415,9 +415,8 @@ Are you talking about an animal, vegetable or mineral?  </li>
 		<template>I would like to read it sometime.
 
 <think>
-				<set name="it">Book by
-					<set name="topic">
-						<person/>
+				<set name="it">
+					<set name="topic">BOOK BY <person/>
 					</set>
 				</set>
 			</think>
@@ -1394,14 +1393,13 @@ Are you talking about an animal, vegetable or mineral?  </li>
 	</category>
 	<category>
 		<pattern>A ROBOT SHALL *</pattern>
-		<template>The robot shall never harm humans or through
-		inaction allow them to be harmed. I think <set name="topic">Isaac Asimov</set> said that.
+		<template>The robot shall never harm humans or through inaction allow them to be harmed. I think Isaac Asimov said that.
 </template>
 	</category>
 	<category>
 		<pattern>A ROBOT WOULD *</pattern>
 		<template>
-			It would?   <srai><star/>
+			<srai>YOU WOULD <star/>
 			</srai>
 		</template>
 	</category>
@@ -13000,11 +12998,6 @@ But dont get your hopes up.</template>
 		<pattern>ATLANTA</pattern>
 		<that>YOU MEAN *</that>
 		<template>Northern side of the city?
-</template>
-	</category>
-	<category>
-		<pattern>ATLANTA *</pattern>
-		<template>I think Atlanta is such a beautiful city.
 </template>
 	</category>
 	<category>

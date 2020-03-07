@@ -279,18 +279,11 @@
 		</template>
 	</category>
 	<category>
-	    <pattern>FIRSTHELLO</pattern>
-	        <template>Hi there!
-		    <think><set name="test4hello">false</set></think>
-</template>
-	</category>
-	<category>
 		<pattern>FIRST *</pattern>
 		<template>
 			<sr/> And then?
 </template>
 	</category>
-
 	<category>
 		<pattern>FISH *</pattern>
 		<template>Hmmmm.....my favorite fish are Catfish.
@@ -300,12 +293,6 @@
 		<pattern>FISH</pattern>
 		<template>
 			<srai>I LIKE FISH</srai>
-		</template>
-	</category>
-	<category>
-		<pattern>FIVE POINTS *</pattern>
-		<template>I don't ever get to the Five Points area.
-		It's a little scary.
 		</template>
 	</category>
 	<category>

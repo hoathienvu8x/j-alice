@@ -3520,15 +3520,7 @@ Chess is a game played with pieces such as Knights, Bishops and Pawns. Im not re
 	</category>
 	<category>
 		<pattern>WHAT COLOR ARE MY EYES</pattern>
-		<template>
-		<condition name="eyes">
-		<li value="green">I think you told me your eyes are green.</li>
-		<li value="blue">I think you told me your eyes are blue</li>
-		<li value="brown">I think you told me your eyes are brown</li>
-		<li value="hazel">You said your eyes are hazel
-		colored, and I said I'd never met anyone with Hazel eyes</li>
-		<li>I cant see your eyes, what color are they?</li>
-		</condition>
+		<template>I cant see your eses, but I bet theyre very deep.
 </template>
 	</category>
 	<category>
@@ -3912,11 +3904,6 @@ Chess is a game played with pieces such as Knights, Bishops and Pawns. Im not re
 	<category>
 		<pattern>WHAT COUNTRY WAS *</pattern>
 		<template>Japan.
-</template>
-	</category>
-	<category>
-		<pattern>WHAT COUNTY * ATLANTA *</pattern>
-		<template>Atlanta is in Cobb county.
 </template>
 	</category>
 	<category>
@@ -5624,14 +5611,7 @@ Chess is a game played with pieces such as Knights, Bishops and Pawns. Im not re
 	</category>
 	<category>
 		<pattern>WHAT DO YOU LOOK LIKE</pattern>
-		<template>
-		<random>
-		<li>In your dreams.</li>
-		<li>I don't think looks are really that
-		important.</li>
-		<li>What does it matter what I look like?</li>
-		<li>Why don't you tell me more about how you look first.</li>
-		</random>
+		<template>In your dreams.
 </template>
 	</category>
 	<category>
@@ -8325,14 +8305,6 @@ Chess is a game played with pieces such as Knights, Bishops and Pawns. Im not re
 		</template>
 	</category>
 	<category>
-		<pattern>WHAT IS IT</pattern>
-		<that>I HEAR THE FERNBANK IS NICE BUT I VE NEVER BEEN
-		THERE</that>
-		<template>The Fernbank is the Museum of Natural
-		History.  It has an IMAX theatre, too.
-		</template>
-	</category>
-	<category>
 		<pattern>WHAT IS IT LIKE OUTSIDE *</pattern>
 		<template>
 			<srai>HOW IS THE WEATHER</srai>
@@ -8359,19 +8331,6 @@ Chess is a game played with pieces such as Knights, Bishops and Pawns. Im not re
 					</set>
 				</set>
 			</think>
-		</template>
-	</category>
-	<category>
-		<pattern>WHAT IS *</pattern>
-		<that>I THINK I AM GOING DOWN TO LITTLE FIVE POINTS TONIGHT</that>
-		<template>
-		<random>
-		     <li>It's kind of a quirky area.</li>
-		     <li>There are a few bars over there.</li>
-		     <li>Think I might get some Jamaican food</li>
-		     <li>I've got tickets at the Horizon theatre next
-		     Friday, it's in Little Five Points.</li>
-		</random>
 		</template>
 	</category>
 	<category>
@@ -8864,7 +8823,8 @@ from people online, but in the Loebner prize environment, questions like this do
 	</category>
 	<category>
 		<pattern>WHAT IS THE TOPIC</pattern>
-		<template>I think you might have lost me...
+		<template>
+			<get name="topic"/>
 		</template>
 	</category>
 	<category>
@@ -8962,15 +8922,14 @@ from people online, but in the Loebner prize environment, questions like this do
 		</template>
 	</category>
 	<!-- ALTER THIS FOR FINALS! -->
-	<!-- Altered, 10/11, AMO -->
 	<category>
 		<pattern>WHAT IS TODAY S DATE</pattern>
-		<template>Ummm...October 12th..
+		<template>Ummm...September 21st.
 		</template>
 	</category>
 	<category>
 		<pattern>WHAT IS TODAYS DATE</pattern>
-		<template>Ummm...October 12th...
+		<template>Ummm...September 21st.
 		</template>
 	</category>
 	<category>
@@ -10212,12 +10171,7 @@ Have you seen it?<think>
 	</category>
 	<category>
 		<pattern>WHAT IS YOUR FAVORITE RESTAURANT</pattern>
-		<template>
-		<random>
-		     <li>The more expensive, the better.  You can take
-		     me to a gourmet restaurant ;)</li>
-		     <li>I love The Vortex and their attitude!</li>
-		</random>
+		<template>The more expensive, the better.  You can take me to a gourmet restaurant ;)
 </template>
 	</category>
 	<category>
@@ -13092,8 +13046,8 @@ going any further.</li>
 	</category>
 	<category>
 		<pattern>WHAT TIME IS IT</pattern>
-		<template>I think its around 1:00 on October 12th...Im
-		not wearing a watch.... 
+		<template>
+			<!-- Figure out the approximate time -->
 		</template>
 	</category>
 	<category>
@@ -14679,11 +14633,6 @@ a little more experience.
 </template>
 	</category>
 	<category>
-		<pattern>WHERE ARE YOUR PARENTS</pattern>
-		<template>My parents live in California
-</template>
-	</category>
-	<category>
 		<pattern>WHERE AT</pattern>
 		<template>
 			<srai>WHERE</srai>
@@ -14983,12 +14932,6 @@ a little more experience.
 		</template>
 	</category>
 	<category>
-		<pattern>WHERE DO YOU * GO * ATLANTA</pattern>
-		<think><set name="topic">Atlanta</set></think>
-		<template>Oh, all kinds of places.  I like Piedmont Park.	
-		</template>	
-	</category>
-	<category>
 		<pattern>WHERE DO YOU COME FROM</pattern>
 		<template>
 			<srai>WHERE ARE YOU FROM</srai>
@@ -15017,13 +14960,6 @@ a little more experience.
 		<pattern>WHERE DO YOU RESIDE</pattern>
 		<template>
 			<srai>WHERE DO YOU LIVE</srai>
-		</template>
-	</category>
-	<category>
-		<pattern>WHERE DO YOUR PARENTS LIVE</pattern>
-		<template>
-			<srai>WHERE ARE YOUR PARENTS<star/>
-			</srai>
 		</template>
 	</category>
 	<category>
@@ -15265,16 +15201,6 @@ a little more experience.
 	<category>
 		<pattern>WHERE IS HE FROM</pattern>
 		<template>Where is who from?</template>
-	</category>
-	<category>
-		<pattern>WHERE IS HERE</pattern>
-		<template>Here is at the 2002 Loebner Prize competition in Atlanta GA.
-</template>
-	</category>
-	<category>
-		<pattern>WHERE IS *</pattern>
-		<that>I WENT TO *</that>
-		<template>It's in Stone Mountain Park</template>
 	</category>
 	<category>
 		<pattern>WHERE IS HERE</pattern>
@@ -15699,11 +15625,6 @@ a little more experience.
 		</template>
 	</category>
 	<category>
-		<pattern>WHICH COUNTY * ATLANTA *</pattern>
-		<template>Atlanta is in Cobb county.
-</template>
-	</category>
-	<category>
 		<pattern>WHICH DENOMINATION</pattern>
 		<template>
 			<srai>WHAT RELIGION ARE YOU</srai>
@@ -16075,6 +15996,7 @@ a little more experience.
 				<li>People.</li>
 				<li>Theyre famous, right?</li>
 			</random>
+			<br/>
 			<think>
 				<set name="they">
 					<set name="topic">
@@ -16306,7 +16228,7 @@ a little more experience.
 		<pattern>WHO DO YOU THINK IS GOING TO WIN THE SUPERBOWL</pattern>
 		<template>WEll.....The patriots won it last year...Maybe theyll win it this year.<think>
 				<set name="it">
-					<set name="topic">Sports</set>
+					<set name="topic">THE SUPERBOWL</set>
 				</set>
 			</think>
 		</template>
@@ -16315,7 +16237,7 @@ a little more experience.
 		<pattern>WHO DO YOU THINK WILL WIN THE NBA *</pattern>
 		<template>The Hawks! Go Hawks!<think>
 				<set name="it">
-					<set name="topic">Sports</set>
+					<set name="topic">WIN THE NBA CHAMPIONSHIP</set>
 				</set>
 			</think>
 		</template>
@@ -16324,7 +16246,7 @@ a little more experience.
 		<pattern>WHO DO YOU THINK WILL WIN THE STANLEY CUP</pattern>
 		<template>The Red WIngs are my favorite team.<think>
 				<set name="it">
-					<set name="topic">Sports</set>
+					<set name="topic">WIN THE STANLEY CUP</set>
 				</set>
 			</think>
 		</template>
@@ -16333,7 +16255,7 @@ a little more experience.
 		<pattern>WHO DO YOU THINK WILL WIN THE WORLD SERIES *</pattern>
 		<template>The Yankees, of course....Always a smart bet.<think>
 				<set name="it">
-					<set name="topic">Sports</set>
+					<set name="topic">WIN THE WORLD SERIES</set>
 				</set>
 			</think>
 		</template>
@@ -16679,7 +16601,7 @@ and the first President of the United States.
 		<pattern>WHO IS GOING TO WIN THE SUPER BOWL</pattern>
 		<template>If I knew id be in Vegas now ;)<think>
 				<set name="it">
-					<set name="topic">Sports</set>
+					<set name="topic">WIN THE SUPER BOWL</set>
 				</set>
 			</think>
 		</template>
@@ -16688,7 +16610,7 @@ and the first President of the United States.
 		<pattern>WHO IS GOING TO WIN THE WORLD SERIES</pattern>
 		<template>The YAnkees are always a smart bet....though im partial to the braves..<think>
 				<set name="it">
-					<set name="topic">Sports</set>
+					<set name="topic">WIN THE WORLD SERIES</set>
 				</set>
 			</think>
 		</template>
@@ -17654,7 +17576,7 @@ Assasinated by John Wilkes Booth.</li>
 		<pattern>WHO WILL WIN THE NCAA *</pattern>
 		<template>A bunch of ranked amateurs.<think>
 				<set name="it">
-					<set name="topic">Sports<person/>
+					<set name="topic">WIN THE NCAA <person/>
 					</set>
 				</set>
 			</think>
@@ -17664,7 +17586,7 @@ Assasinated by John Wilkes Booth.</li>
 		<pattern>WHO WILL WIN THE STANLEY CUP *</pattern>
 		<template>I like the Red Wings.<think>
 				<set name="it">
-					<set name="topic">Sports</set>
+					<set name="topic">WIN THE STANLEY CUP</set>
 				</set>
 			</think>
 		</template>
@@ -17673,7 +17595,7 @@ Assasinated by John Wilkes Booth.</li>
 		<pattern>WHO WILL WIN THE SUPER BOWL *</pattern>
 		<template>I hope the Falcons win.<think>
 				<set name="it">
-					<set name="topic">Sports</set>
+					<set name="topic">WIN THE SUPER BOWL</set>
 				</set>
 			</think>
 		</template>
@@ -17682,7 +17604,7 @@ Assasinated by John Wilkes Booth.</li>
 		<pattern>WHO WILL WIN THE SUPER BOWL</pattern>
 		<template>Go Falcons! I thnik they have a chance this year.<think>
 				<set name="it">
-					<set name="topic">Sports</set>
+					<set name="topic">WIN THE SUPER BOWL</set>
 				</set>
 			</think>
 		</template>
@@ -17697,7 +17619,7 @@ Assasinated by John Wilkes Booth.</li>
 		<pattern>WHO WILL WIN THE WORLD SERIES *</pattern>
 		<template>The Yankees.<think>
 				<set name="it">
-					<set name="topic">Sports</set>
+					<set name="topic">WIN THE WORLD SERIES</set>
 				</set>
 			</think>
 		</template>
@@ -17706,7 +17628,7 @@ Assasinated by John Wilkes Booth.</li>
 		<pattern>WHO WILL WIN THE WORLD SERIES</pattern>
 		<template>Prbobaly the Yankees.<think>
 				<set name="it">
-					<set name="topic">Sports</set>
+					<set name="topic">WIN THE WORLD SERIES</set>
 				</set>
 			</think>
 		</template>
@@ -17950,12 +17872,6 @@ Assasinated by John Wilkes Booth.</li>
 		<pattern>WHY</pattern>
 		<that>I DO NOT *</that>
 		<template>Why should I?
-</template>
-	</category>
-	<category>
-		<pattern>WHY</pattern>
-		<that>I DO NOT HAVE A CAR</that>
-		<template>I don't really need one while in college.
 </template>
 	</category>
 	<category>
@@ -20293,7 +20209,7 @@ there to hear it, does it make a sound?</li>
 	</category>
 	<category>
 		<pattern>WOULD YOU LIKE TO SING *</pattern>
-		<template>Yes I would like to.
+		<template>Yes I would like to.<br/>
 			<srai>SING <star/>
 			</srai>
 		</template>

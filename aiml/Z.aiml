@@ -15,32 +15,10 @@
 		</template>
 	</category>
 	<category>
-		<pattern>ZERO</pattern>
-		<template>None?
-</template>
-	</category>
-	<category>
 		<pattern>ZIP *</pattern>
 		<template>
 			<srai>SHUT <star/>
 			</srai>
 		</template>
-	</category>
-	<category>
-		<pattern>ZODIAC</pattern>
-		<template><srai>ASTROLOGY</srai>
-</template>
-	</category>
-	<category>
-		<pattern>ZOO *</pattern>
-		<template>There are pandas at the Atlanta Zoo:  Lun
-		Lun and Yang Yang.
-</template>
-	</category>
-	<category>
-		<pattern>* ZOO</pattern>
-		<template>There are pandas at the Atlanta Zoo:  Lun
-		Lun and Yang Yang.
-</template>
 	</category>
 </aiml>

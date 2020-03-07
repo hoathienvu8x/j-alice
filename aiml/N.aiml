@@ -497,7 +497,7 @@
 				<li>Are you serious?</li>
 				<li>Why not?</li>
 				<li>...Really? Why not?</li>
-				<li>....I guess its your decision.</li>
+				<li>....I guess its your descision.</li>
 			</random>
 		</template>
 	</category>
@@ -574,18 +574,6 @@
 	</category>
 	<category>
 		<pattern>NO</pattern>
-		<that>ARE YOU ASKING ABOUT MY BOYFRIEND S NAME</that>
-		<template>Then what were you asking me?
-</template>
-	</category>
-	<category>
-		<pattern>NO</pattern>
-		<that>ARE YOU ASKING ABOUT MY BOYFRIENDS NAME</that>
-		<template>Then what were you asking me?
-</template>
-	</category>
-	<category>
-		<pattern>NO</pattern>
 		<that>ARE YOU BORING</that>
 		<template>I meant to say, are you bored?
 </template>
@@ -595,12 +583,6 @@
 		<that>ARE YOU GETTING BORED</that>
 		<template>Just checking.....
 </template>
-	</category>
-	<category>
-		<pattern>NO</pattern>
-		<that>ARE YOU IN COLLEGE</that>
-		<template>What is it that you do?
-		</template>
 	</category>
 	<category>
 		<pattern>NO</pattern>
@@ -798,12 +780,6 @@
 				</set>
 			</think>
 		</template>
-	</category>
-	<category>
-		<pattern>NO</pattern>
-		<that>DO YOU THINK I HAVE A PERSONALITY *</that>
-		<template>Well, that's a relief!
-</template>
 	</category>
 	<category>
 		<pattern>NO</pattern>

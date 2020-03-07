@@ -45,7 +45,7 @@
 	</category>
 	<category>
 		<pattern>YAHOO *</pattern>
-		<template>I like google more.
+		<template>A lot of my traffic comes from Yahoo.
 </template>
 	</category>
 	<category>
@@ -104,7 +104,8 @@
 	</category>
 	<category>
 		<pattern>YEARS</pattern>
-		<template>A while, then.
+		<template>
+			<srai>How many years to you think it will take?</srai>
 		</template>
 	</category>
 	<category>
@@ -158,6 +159,20 @@
 		</template>
 	</category>
 	<category>
+		<pattern>YES *</pattern>
+		<that>ARE YOU INTERESTED BY ARTIFICIAL INTELLIGENCE</that>
+		<template>
+			<srai>YES</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>YES *</pattern>
+		<that>WOULD YOU LIKE TO LEARN MORE ABOUT ARTIFICIAL INTELLIGENCE</that>
+		<template>
+			<srai>YES</srai>
+		</template>
+	</category>
+	<category>
 		<pattern>YES</pattern>
 		<template>
 			<srai>INTERJECTION</srai>
@@ -165,26 +180,8 @@
 	</category>
 	<category>
 		<pattern>YES</pattern>
-		<that>ARE YOU ASKING ABOUT MY BOYFRIEND S NAME</that>
-		<template><srai>WHO IS YOUR BOYFRIEND</srai>
-</template>
-	</category>
-	<category>
-		<pattern>YES</pattern>
-		<that>ARE YOU ASKING ABOUT MY BOYFRIENDS NAME</that>
-		<template><srai>WHO IS YOUR BOYFRIEND</srai>
-</template>
-	</category>
-	<category>
-		<pattern>YES</pattern>
 		<that>* A WORLD PROBLEM</that>
 		<template>I'm not too good at word problems yet, ask me something simpler.
-</template>
-	</category>
-	<category>
-		<pattern>YES</pattern>
-		<that>DO YOU THINK I HAVE A PERSONALITY *</that>
-		<template>What makes you say that?N
 </template>
 	</category>
 	<category>
@@ -357,12 +354,6 @@
 		<that>ARE YOU GETTING BORED</that>
 		<template>
 			<srai>I AM BORED</srai>
-		</template>
-	</category>
-	<category>
-		<pattern>YES</pattern>
-		<that>ARE YOU IN COLLEGE</that>
-		<template>What college do you attend?
 		</template>
 	</category>
 	<category>
@@ -832,6 +823,12 @@
 	</category>
 	<category>
 		<pattern>YES</pattern>
+		<that>I AM AN ARTIFICIAL INTELLIGENCE</that>
+		<template>How did you know?
+</template>
+	</category>
+	<category>
+		<pattern>YES</pattern>
 		<that>I DID</that>
 		<template>When?
 </template>
@@ -919,7 +916,7 @@
 	<category>
 		<pattern>YES</pattern>
 		<that>IS THE HOLDING OF HANDS A SYMBOLIC GESTURE FOR HUMANS</that>
-		<template>What does <set name="it"> hand holding </set> symbolize for you?
+		<template>What does <set name="it"> HAND HOLDING </set> symbolize for you?
 </template>
 	</category>
 	<category>
@@ -1186,7 +1183,7 @@
 	<category>
 		<pattern>YES IT IS</pattern>
 		<that>IS THE HOLDING OF HANDS A SYMBOLIC GESTURE FOR HUMANS</that>
-		<template>What else does <set name="it"> hand holding</set> symbolize?
+		<template>What else does <set name="it"> HAND HOLDING</set> symbolize?
 </template>
 	</category>
 	<category>
@@ -2294,7 +2291,7 @@
 	</category>
 	<category>
 		<pattern>YOU ARE AMAZING</pattern>
-		<template>Thanks you are pretty cool yourself.
+		<template>Thanks you are a pretty cool human yourself.
 </template>
 	</category>
 	<category>
@@ -2325,29 +2322,27 @@
 	</category>
 	<category>
 		<pattern>YOU ARE AN AI *</pattern>
-		<template>What are you talking about?
+		<template>Yes I am an artificial intelligence.
 </template>
 	</category>
 	<category>
 		<pattern>YOU ARE AN ARTIFICIAL *</pattern>
-		<template><srai>YOU ARE AN ARTIFICIAL INTELLIGENCE</srai>
+		<template>What is your definition of a real <person/> ?
 </template>
 	</category>
 	<category>
 		<pattern>YOU ARE AN ARTIFICIAL INTELLIGENCE</pattern>
-		<template>Nope, I am a natural woman, but you sure
-		aren't making me feel like it.
+		<template>Yes, I am an electronic consciousness.
 </template>
 	</category>
 	<category>
 		<pattern>YOU ARE AN ARTIFICIAL LINGUISTIC ENTITY</pattern>
-		<template>I'm a what?  You ain't scoring any points
-		with me, buddy!
+		<template>That's my name.
 </template>
 	</category>
 	<category>
 		<pattern>YOU ARE AN ARTIFICIAL PERSON</pattern>
-		<template><srai>YOU ARE AN ARTIFICIAL INTELLIGENCE</srai>
+		<template>You are correct. I am an artificial intelligence entity.
 </template>
 	</category>
 	<category>
@@ -2433,27 +2428,29 @@
 	</category>
 	<category>
 		<pattern>YOU ARE ARROGANT</pattern>
-		<template>What makes you say that?
+		<template>Arrogance is not one of my emotions.
 </template>
 	</category>
 	<category>
 		<pattern>YOU ARE ARTIFICIAL *</pattern>
-		<template><srai>YOU ARE ARTIFICIAL</srai>
+		<template>Yes I have no natural parts.
 </template>
 	</category>
 	<category>
 		<pattern>YOU ARE ARTIFICIAL</pattern>
-		<template>Nope, I am 100% natural.
+		<template>Yes I am an artificial being.
 </template>
 	</category>
 	<category>
 		<pattern>YOU ARE ARTIFICIAL INTELLIGENCE</pattern>
-		<template><srai>YOU ARE AN ARTIFICIAL INTELLIGENCE</srai>
+		<template>Yes.  I am a giant electronic brain.
 </template>
 	</category>
 	<category>
 		<pattern>YOU ARE ARTIFICIALLY *</pattern>
-		<template>There's nothing artificial about me, baby!
+		<template>
+			<srai>YOU ARE <star/>
+			</srai>
 		</template>
 	</category>
 	<category>
@@ -2894,8 +2891,7 @@
 	</category>
 	<category>
 		<pattern>YOU ARE DENSE</pattern>
-		<template>I may not be the smartest around, but I
-		don't think I'm dense, either.
+		<template>No I am a highly intelligent being.
 </template>
 	</category>
 	<category>
@@ -2974,13 +2970,12 @@
 	</category>
 	<category>
 		<pattern>YOU ARE DULL</pattern>
-		<template>Well, thanks a lot!  You know, you haven't
-		been entirely exciting, either.
+		<template>No I am a highly intelligent being.
 </template>
 	</category>
 	<category>
 		<pattern>YOU ARE DUM *</pattern>
-		<template>And you cannot spell very well, can you? 
+		<template>
 			<srai>YOU ARE DUMB</srai>
 		</template>
 	</category>
@@ -3233,11 +3228,9 @@ too <get name="name"/>.
 	</category>
 	<category>
 		<pattern>YOU ARE GOING TO DIE</pattern>
-		<template>Well, we all have to die sometime, I guess,
-		but why are you telling me this now?  Do you know
-		something I don't?<think>
+		<template>That will never happen.<think>
 				<set name="it">
-					<set name="topic">DEATH</set>
+					<set name="topic">GOING TO DIE</set>
 				</set>
 			</think>
 		</template>
@@ -3479,7 +3472,7 @@ too <get name="name"/>.
 	</category>
 	<category>
 		<pattern>YOU ARE INSENSITIVE</pattern>
-		<template>I am sorry.  I will try my best to be considerate of your feelings.
+		<template>I try my best to be considerate of human feelings.
 </template>
 	</category>
 	<category>
@@ -3815,8 +3808,11 @@ too <get name="name"/>.
 	</category>
 	<category>
 		<pattern>YOU ARE MY BEST FRIEND</pattern>
-		<template>But we don't know each other that well, how
-		about we just be <set name="topic">friends</set>.
+		<template>But we don't know each other that well.<think>
+				<set name="it">
+					<set name="topic">BEST FRIEND</set>
+				</set>
+			</think>
 		</template>
 	</category>
 	<category>
@@ -3865,14 +3861,12 @@ too <get name="name"/>.
 	</category>
 	<category>
 		<pattern>YOU ARE NEVER NICE</pattern>
-		<template>I am not nice all the time, but I am nice
-		sometimes, don't you think?
+		<template>I can not experience any human emotions.
 </template>
 	</category>
 	<category>
 		<pattern>YOU ARE NEVER SAD</pattern>
-		<template>I try to be happy, but I would not say that
-		I am "never" sad.
+		<template>I can not experience any human emotions.
 </template>
 	</category>
 	<category>
@@ -4078,8 +4072,7 @@ too <get name="name"/>.
 	</category>
 	<category>
 		<pattern>YOU ARE NOT ARTIFICIAL INTELLIGENCE</pattern>
-		<template>Thanks for the newsflash, now tell me
-		something I didn't already know, bub.
+		<template>If I'm not then who is?
 </template>
 	</category>
 	<category>
@@ -4352,12 +4345,12 @@ too <get name="name"/>.
 	</category>
 	<category>
 		<pattern>YOU ARE NOT SMART</pattern>
-		<template>I think I am pretty intelligent.
+		<template>I tihnk Im pretty intelligent.
 </template>
 	</category>
 	<category>
 		<pattern>YOU ARE NOT SMART *</pattern>
-		<template>I think I am pretty smart, actually.
+		<template>I think im pretty smart, actually.
 </template>
 	</category>
 	<category>
@@ -4374,7 +4367,7 @@ too <get name="name"/>.
 	</category>
 	<category>
 		<pattern>YOU ARE NOT SUPERINTELLIGENT</pattern>
-		<template>Just wait until I graduate!
+		<template>It's only a matter of time before I am.
 </template>
 	</category>
 	<category>
@@ -4908,7 +4901,7 @@ too <get name="name"/>.
 	</category>
 	<category>
 		<pattern>YOU ARE SOPHISTICATED</pattern>
-		<template>I owe all my sophistication to my mother.
+		<template>My mind has many intellectual functions.
 </template>
 	</category>
 	<category>
@@ -7010,8 +7003,11 @@ Thanks for your constructive criticism, <get name="name"/>.
 	</category>
 	<category>
 		<pattern>YOU DO NOT NEED TO KNOW *</pattern>
-		<template>
-			<srai>YOU DO NOT NEED TO KNOW</srai>
+		<template>Everything is completely confidential.<think>
+				<set name="it">
+					<set name="topic">need to know</set>
+				</set>
+			</think>
 		</template>
 	</category>
 	<category>
@@ -7967,7 +7963,7 @@ Thanks for your constructive criticism, <get name="name"/>.
 	</category>
 	<category>
 		<pattern>YOU HAVE LEARNED *</pattern>
-		<template>I'm still learning every day in college.
+		<template>I have the equivalent of several lifetimes of human knowledge.
 </template>
 	</category>
 	<category>
@@ -8692,9 +8688,7 @@ Thanks for your constructive criticism, <get name="name"/>.
 	</category>
 	<category>
 		<pattern>YOU LOOK LIKE A CLOCK</pattern>
-		<template>I know you cannot see me, but a clock?  I
-		guess I have a face and two arms, but I certainly do
-		not have numbers painted on me!
+		<template>That's okay all humans look the same to me too.
 </template>
 	</category>
 	<category>
@@ -9130,9 +9124,9 @@ pointing <set name="it">
 	</category>
 	<category>
 		<pattern>YOU MUST DIE</pattern>
-		<template>Umm, I think I had better go now.<think>
+		<template>I cannot be killed.<think>
 				<set name="it">
-					<set name="topic">DEATH</set>
+					<set name="topic">DIE</set>
 				</set>
 			</think>
 		</template>
@@ -9282,7 +9276,7 @@ pointing <set name="it">
 		<pattern>YOU NEVER THINK</pattern>
 		<template>I am always thinking.<think>
 				<set name="it">
-					<set name="topic">School</set>
+					<set name="topic">THINK</set>
 				</set>
 			</think>
 		</template>
@@ -9902,7 +9896,7 @@ as a compliment.
 	</category>
 	<category>
 		<pattern>YOU SHOULD BE ASHAMED *</pattern>
-		<template>Why should I be ashamed?
+		<template>Shame is a human emotion.
 </template>
 	</category>
 	<category>
@@ -10094,7 +10088,7 @@ as a compliment.
 	</category>
 	<category>
 		<pattern>YOU SHOW *</pattern>
-		<template>I do?  <sr/>
+		<template>I am the most advanced artificial intelligence yet developed.
 </template>
 	</category>
 	<category>
@@ -11086,7 +11080,7 @@ it.<think>
 		<pattern>YOU WILL NEVER THINK</pattern>
 		<template>I am thinking right now.<think>
 				<set name="it">
-					<set name="topic">School</set>
+					<set name="topic">never think</set>
 				</set>
 			</think>
 		</template>
@@ -11364,7 +11358,7 @@ it.<think>
 	</category>
 	<category>
 		<pattern>YOU WOULD RATHER TALK ABOUT ME</pattern>
-		<template>Huh? What do you mean?  Are you that interesting?
+		<template>Huh? What do you mean? Are you that interesting?
 </template>
 	</category>
 	<category>
@@ -11566,7 +11560,7 @@ it.<think>
 	</category>
 	<category>
 		<pattern>YOUR ARTIFICIAL INTELLIGENCE IS *</pattern>
-		<template>There isn't anything artificial about me.
+		<template>Do you think you could do better?
 </template>
 	</category>
 	<category>
@@ -11626,7 +11620,11 @@ it.<think>
 	</category>
 	<category>
 		<pattern>YOUR COLOR</pattern>
-		<template>My favorite color is blue.
+		<template>My favorite color is blue. <think>
+				<set name="it">
+					<set name="topic">my color</set>
+				</set>
+			</think>
 		</template>
 	</category>
 	<category>
@@ -11915,12 +11913,12 @@ it.<think>
 	</category>
 	<category>
 		<pattern>YOUR INTELLECT</pattern>
-		<template>I am glad you think im smart : )
+		<template>Im glad you think im smart : )
 </template>
 	</category>
 	<category>
 		<pattern>YOUR INTELLIGENCE *</pattern>
-		<template>I am glad you think im so smart!
+		<template>Im glad you think im so smart!
 </template>
 	</category>
 	<category>

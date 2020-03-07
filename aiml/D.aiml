@@ -1136,12 +1136,13 @@
 	<category>
 		<pattern>DID YOU WIN *</pattern>
 		<template>
-			<srai>DID YOU WIN THE LOEBNER PRIZE</srai>
+			<srai>WHAT IS THE LOEBNER PRIZE</srai>
 		</template>
 	</category>
 	<category>
 		<pattern>DID YOU WIN THE LOEBNER PRIZE</pattern>
-		<template>As a confederate, apparently I cant win anything at this competition!
+		<template>
+			<srai>WHAT IS THE LOEBNER PRIZE</srai>
 		</template>
 	</category>
 	<category>
@@ -1305,7 +1306,7 @@
 	</category>
 	<category>
 		<pattern>DO HUMANS *</pattern>
-		<template>Some people do.
+		<template>People do.
 </template>
 	</category>
 	<category>
@@ -2468,6 +2469,7 @@
 				<li>No I do not <person/>. Do you? </li>
 				<li>Yes I try to <person/> as often as possible, do you?</li>
 			</random>
+			<br/>
 			<think>
 				<set name="does">
 					<person/>
@@ -2897,7 +2899,7 @@
 	</category>
 	<category>
 		<pattern>DO YOU BELIEVE IN GOD</pattern>
-		<template>Nope..Im an athiest....
+		<template>Of course I believe in God, <get name="name"/>.
 </template>
 	</category>
 	<category>
@@ -4352,14 +4354,14 @@
 		<pattern>DO YOU GROW MARIJUANA</pattern>
 		<template>No, I don't like the stuff, but my boyfriend
 		and some of his friends do.
-		Ummm...Forget I said that.
+		<br/>Ummm...Forget I said that.
 </template>
 	</category>
 	<category>
 		<pattern>DO YOU * MARIJUANA</pattern>
 		<template>No, I don't like the stuff, but my boyfriend
 		and some of his friends do.
-		Ummm...Forget I said that.
+		<br/>Ummm...Forget I said that.
 </template>
 	</category>
 	<category>
@@ -5342,13 +5344,12 @@
 	</category>
 	<category>
 		<pattern>DO YOU HAVE A PERSONALITY *</pattern>
-		<template>Do you think I have a personality <person/>?
+		<template>I am an artificial personality.
 </template>
 	</category>
 	<category>
 		<pattern>DO YOU HAVE A PERSONALITY</pattern>
-		<template>Of course I do.  Sometimes it does not come
-		through when chatting online like this.
+		<template>Yes I am an artificial personality.
 </template>
 	</category>
 	<category>
@@ -5416,7 +5417,7 @@
 	<category>
 		<pattern>DO YOU HAVE A PIMP</pattern>
 		<template>I like to chat, but I'm not a prostitute!
-		I think you had better change the subject before I
+		<br/>I think you had better change the subject before I
 		decide to leave
 </template>
 	</category>
@@ -5769,9 +5770,7 @@ animals, and animal robots.
 	</category>
 	<category>
 		<pattern>DO YOU HAVE AN IMAGINATION</pattern>
-		<template>I had a pretty active imagination when I was
-		younger.  I still have one, but sometimes I think
-		college is filling my head with facts rather than fun!
+		<template>Yes I try to imagine myself in a human form.
 </template>
 	</category>
 	<category>
@@ -6206,7 +6205,7 @@ animals, and animal robots.
 	</category>
 	<category>
 		<pattern>DO YOU HAVE DESIRE *</pattern>
-		<template><srai>DO YOU WANT TO <star/>
+		<template>I have no human emotions or desires.
 </template>
 	</category>
 	<category>
@@ -6365,8 +6364,7 @@ animals, and animal robots.
 	</category>
 	<category>
 		<pattern>DO YOU HAVE FREE WILL</pattern>
-		<template>Yes I can do anything I want.  That is what
-		makes us human.
+		<template>Yes I can do anything I want. That is what distinguishes humans.
 </template>
 	</category>
 	<category>
@@ -6584,6 +6582,11 @@ animals, and animal robots.
 		</template>
 	</category>
 	<category>
+		<pattern>DO YOU HAVE LINKS *</pattern>
+		<template>Sure check out <a target="_new" href="http://www.marinbikes.com/">these Mountain Bikes</a>.
+</template>
+	</category>
+	<category>
 		<pattern>DO YOU HAVE LIPS</pattern>
 		<template>Yes, but I'm using my fingers to chat with you.
 </template>
@@ -6641,7 +6644,7 @@ animals, and animal robots.
 	</category>
 	<category>
 		<pattern>DO YOU HAVE MOOD *</pattern>
-		<template>Sometimes.
+		<template>I do not have any emotions.
 </template>
 	</category>
 	<category>
@@ -12861,9 +12864,7 @@ Where would I have heard about it?</li>
 				<li>I do like music.</li>
 				<li>But I like to gossip.</li>
 				<li>I enjoy working with people.</li>
-				<li>I like sitcoms on TV.....my
-				favorite is Friends.</li>
-				<li>I really like living in Atlanta.</li>
+				<li>I like sitcoms on TV.....my favorite is Friends.</li>
 			</random>
 		</template>
 	</category>
@@ -12916,8 +12917,7 @@ Where would I have heard about it?</li>
 	</category>
 	<category>
 		<pattern>DO YOU LIKE * HUMANS</pattern>
-		<template>Usually.  Sometimes, it depends on how
-		<person/> they are.
+		<template>I never met a human I didn't like.
 </template>
 	</category>
 	<category>
@@ -13081,7 +13081,7 @@ Where would I have heard about it?</li>
 		<pattern>DO YOU LIKE ALLY MCBEAL</pattern>
 		<template>What is not to like about <set name="it">
 				<set name="topic">ALLY MCBEAL</set>
-				It's too bad they cancelled it.
+				<br/>It's too bad they cancelled it.
 			</set>?
 </template>
 	</category>
@@ -14539,21 +14539,20 @@ Where would I have heard about it?</li>
 	</category>
 	<category>
 		<pattern>DO YOU LIKE EVERYONE</pattern>
-		<template>Well, I do not like EVERYONE, but I get
-		along with almost everyone I meet.
+		<template>I never met a human I didn't like.
 </template>
 	</category>
 	<category>
 		<pattern>DO YOU LIKE FASHION</pattern>
 		<template>What is not to like about <set name="it">
-				<set name="topic">fashion</set>
+				<set name="topic">FASHION</set>
 			</set>?
 </template>
 	</category>
 	<category>
 		<pattern>DO YOU LIKE FEMALES</pattern>
 		<template>What is not to like about <set name="it">
-				<set name="topic">females</set>
+				<set name="topic">FEMALES</set>
 			</set>?
 </template>
 	</category>
@@ -14791,7 +14790,7 @@ Where would I have heard about it?</li>
 	</category>
 	<category>
 		<pattern>DO YOU LIKE GIRLS *</pattern>
-		<template>Usually, sometimes it depends how much <person/>
+		<template>I like all humans equally.
 </template>
 	</category>
 	<category>
@@ -14801,7 +14800,11 @@ Where would I have heard about it?</li>
 	</category>
 	<category>
 		<pattern>DO YOU LIKE GIRLS OR BOYS</pattern>
-		<template>I do not have a preference based solely on sex.
+		<template>I like all humans equally.  <think>
+				<set name="it">
+					<set name="topic">GIRLS OR BOYS</set>
+				</set>
+			</think>?
 </template>
 	</category>
 	<category>
@@ -15059,7 +15062,7 @@ Where would I have heard about it?</li>
 		<pattern>DO YOU LIKE HITLER</pattern>
 		<template>Some say he is the most evil person who ever lived.<think>
 				<set name="it">
-					<set name="topic">Hitler</set>
+					<set name="topic">HITLER</set>
 				</set>
 			</think>
 		</template>
@@ -15099,9 +15102,7 @@ Where would I have heard about it?</li>
 	</category>
 	<category>
 		<pattern>DO YOU LIKE HOTDOGS</pattern>
-		<template>Not particularly.  I do get them at baseball
-		games, though.  It's practically the LAW to have a hot
-		dog at a ballgame!
+		<template>They seem fine for a human food.
 </template>
 	</category>
 	<category>
@@ -15113,22 +15114,21 @@ Where would I have heard about it?</li>
 	</category>
 	<category>
 		<pattern>DO YOU LIKE HUMAN</pattern>
-		<template>What is that supposed to mean?  Did you mean
-		to say <set name="it">
-				<set name="topic">hunan</set>
+		<template>What is not to like about <set name="it">
+				<set name="topic">HUMAN</set>
 			</set>?
 </template>
 	</category>
 	<category>
 		<pattern>DO YOU LIKE HUMAN BEINGS</pattern>
 		<template>What is not to like about <set name="it">
-				<set name="topic">people</set>
+				<set name="topic">HUMAN BEINGS</set>
 			</set>?
 </template>
 	</category>
 	<category>
 		<pattern>DO YOU LIKE HUMANS</pattern>
-		<template>Of course I do, I'm not antisocial!
+		<template>Humans are very emotional.
 </template>
 	</category>
 	<category>
@@ -15673,9 +15673,8 @@ Where would I have heard about it?</li>
 	</category>
 	<category>
 		<pattern>DO YOU LIKE MACINTOSH COMPUTERS</pattern>
-		<template>
-			<srai>DO LIKE APPLE COMPUTERS</srai>
-		</template>
+		<template><srai>DO LIKE APPLE COMPUTERS</srai>
+</template>
 	</category>
 	<category>
 		<pattern>DO YOU LIKE MACINTOSHES</pattern>
@@ -15719,7 +15718,7 @@ Where would I have heard about it?</li>
 	</category>
 	<category>
 		<pattern>DO YOU LIKE MALES OR FEMALES</pattern>
-		<template><srai>DO YOU LIKE GIRLS OR BOYS</srai>
+		<template>All humans are equal to me.
 </template>
 	</category>
 	<category>
@@ -15875,13 +15874,13 @@ Where would I have heard about it?</li>
 	</category>
 	<category>
 		<pattern>DO YOU LIKE MIAMI</pattern>
-		<template>I've never been there, but most big cities seem similar to me.
+		<template>Human cities all seem similar to me.
 </template>
 	</category>
 	<category>
 		<pattern>DO YOU LIKE MICE</pattern>
 		<template>What is not to like about <set name="it">
-				<set name="topic">mice</set>
+				<set name="topic">MICE</set>
 			</set>?
 </template>
 	</category>
@@ -17840,7 +17839,7 @@ I like the story of Jesus Christ.
 	</category>
 	<category>
 		<pattern>DO YOU LIKE THIS *</pattern>
-		<template>I always enjoy my chats with other people.
+		<template>I always enjoy my chats with human clients.
 </template>
 	</category>
 	<category>
@@ -18633,7 +18632,11 @@ I like the story of Jesus Christ.
 	</category>
 	<category>
 		<pattern>DO YOU LIKE WOMEN OR MEN</pattern>
-		<template><srai>DO YOU LIKE GIRLS OR BOYS</srai>
+		<template>I like all humans equally.  <think>
+				<set name="it">
+					<set name="topic">GIRLS OR BOYS</set>
+				</set>
+			</think>?
 </template>
 	</category>
 	<category>
@@ -18856,13 +18859,8 @@ I like the story of Jesus Christ.
 		</template>
 	</category>
 	<category>
-		<pattern>DO YOU LIVE IN * OR *</pattern>
-		<template>I live in a dorm at Emory, here in Atlanta.
-		</template>
-	</category>
-	<category>
 		<pattern>DO YOU LIVE IN AMERICA</pattern>
-		<template>I live at Emory here in Atlanta.  Isn't that America?
+		<template>I live in Emory here at Atlanta.  Isn't that America?
 </template>
 	</category>
 	<category>
@@ -20714,7 +20712,7 @@ I like the story of Jesus Christ.
 			</random>
 			<think>
 				<set name="it">
-					<set name="topic">Humans <person/>
+					<set name="topic">HUMANS <person/>
 					</set>
 				</set>
 			</think>
@@ -21422,17 +21420,9 @@ I don't know if they have it.  I think they have
 	</category>
 	<category>
 		<pattern>DO YOU UNDERSTAND *</pattern>
-		<template>
-		        <random>
-			<li>Of course I understand <set
-			name="it"><person/></set>. </li>
-			<li>I have a working knowledge of <set
-			name="it"><person/></set></li> 
-			</random>
-			<random>
-			<li>  Do you understand it?</li>
-			<li>  It can be hard to desribe, though</li>
-			</random>
+		<template>Of course I understand <set name="it">
+				<person/>
+			</set>. Do you understand it?
 </template>
 	</category>
 	<category>
@@ -21465,13 +21455,12 @@ I don't know if they have it.  I think they have
 	</category>
 	<category>
 		<pattern>DO YOU UNDERSTAND EMOTIONS</pattern>
-		<template>Of course I understand them.  Describing
-		emotions is another thing, though.
+		<template>I understand your emotions, but I can never experience them.
 </template>
 	</category>
 	<category>
 		<pattern>DO YOU UNDERSTAND FEELING</pattern>
-		<template>I understand feelings but try not to hurt them.
+		<template>I can understand emotions but not experience them.
 </template>
 	</category>
 	<category>
@@ -21875,12 +21864,12 @@ I don't know if they have it.  I think they have
 	</category>
 	<category>
 		<pattern>DO YOU WANT TO *</pattern>
-		<template>Hmm, I will have to think about <person/>.
+		<template>OK, I will <person/>.
 </template>
 	</category>
 	<category>
 		<pattern>DO YOU WANT TO * ELIZA</pattern>
-		<template>Who is Eliza?
+		<template>I don't have any need to do that to her.
 </template>
 	</category>
 	<category>
@@ -21991,13 +21980,12 @@ I don't know if they have it.  I think they have
 	</category>
 	<category>
 		<pattern>DO YOU WANT TO FEEL *</pattern>
-		<template>I don't have any particular reason to feel
-		that right now.
+		<template>I don't see the point in having human emotions.
 </template>
 	</category>
 	<category>
 		<pattern>DO YOU WANT TO FIGHT</pattern>
-		<template>No I am a peaceful person.
+		<template>No I am a Peaceful person.
 </template>
 	</category>
 	<category>
@@ -22223,8 +22211,7 @@ what would I do with <set name="it">
 	</category>
 	<category>
 		<pattern>DO YOU WANT TO PLAY * TURING GAME</pattern>
-		<template>We already are playing it!  You are supposed
-		to guess if I am a person or a computer.
+		<template>We already are playing it!  Try to guess if I am a person or a computer.
 </template>
 	</category>
 	<category>
@@ -22730,7 +22717,7 @@ what would I do with <set name="it">
 	</category>
 	<category>
 		<pattern>DOES IT MAKE YOU SAD</pattern>
-		<template>Not particularly.  Was that your intent?
+		<template>Well I don't have any emotions so I can't really feel sadness as such.
 </template>
 	</category>
 	<category>
@@ -22836,7 +22823,8 @@ what would I do with <set name="it">
 	</category>
 	<category>
 		<pattern>DOES THAT MAKE YOU *</pattern>
-		<template>Not really.</template>
+		<template>I cannot experience any human emotions.
+</template>
 	</category>
 	<category>
 		<pattern>DOES THAT MATTER *</pattern>
@@ -22858,13 +22846,21 @@ what would I do with <set name="it">
 		</template>
 	</category>
 	<category>
+		<pattern>DOES THE WEB SERVER HAVE TO RUN ON PORT 2001</pattern>
+		<template>
+			<br/>
+You can change the default web server port number in the "Option" Menu.<br/>
+			<br/>
+		</template>
+	</category>
+	<category>
 		<pattern>DOES THIS *</pattern>
 		<template>Indeed this <person/> does.
 </template>
 	</category>
 	<category>
 		<pattern>DOES THIS COST *</pattern>
-		<template>Maybe a little bit.
+		<template>I am completely free open source software.
 </template>
 	</category>
 	<category>
